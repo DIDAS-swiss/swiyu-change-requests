@@ -1,0 +1,60 @@
+name: Change request
+description: Propose a change to a swiyu specification, API or trust framework
+title: "[CR] "
+labels: ["change-request", "status: discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this to start the discussion on a change you would like the swiyu team to consider.
+        Once there is enough input, the change is written up as a proposal in `proposals/` (see CONTRIBUTING.md).
+        **Do not report security vulnerabilities here.**
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      multiple: true
+      options:
+        - Issuance (OID4VCI, swiyu-issuer)
+        - Verification (OID4VP, swiyu-verifier)
+        - Wallet / holder experience
+        - Trust registry / trust statements / governance
+        - Identifiers (DIDs, DID resolution)
+        - Status lists / revocation
+        - Credential format (SD-JWT VC, OCA, schemas)
+        - Security (crypto, keys, attestation)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is the current situation and why is it a problem? Link the spec section, API or repository concerned.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Ecosystem impact
+      description: Who is affected (issuers, verifiers, wallets, holders, integrators) and how?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: What should change? A first idea is fine.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Standards, other ecosystems, implementation experience.
+  - type: checkboxes
+    id: coauthor
+    attributes:
+      label: Contribution
+      options:
+        - label: I am willing to help write the proposal
