@@ -44,7 +44,7 @@ maintainer adds `sector:` labels and asks for a **steward** (label
 
 Once a steward is assigned:
 
-1. Copy `proposals/0000-template.md` to `proposals/NNNN-short-title.md`, using
+1. Copy `proposals/0000-template.md` to `proposals/CR-DIDAS-NNNN-short-title.md`, using
    the next free number.
 2. Fill in the front matter and every section (write "n/a" rather than
    deleting one). Verify and reference every claim about swiyu.
@@ -123,14 +123,22 @@ misrepresents the spec costs DIDAS credibility, so:
    the latest spec before consultation, before the council decision and before
    submission, and updates commits and wording if the spec has changed.
 
+## Numbering
+
+Change requests are numbered `CR-DIDAS-NNNN`, four digits, in the order their
+proposal pull requests are opened (`CR-DIDAS-0001`, `CR-DIDAS-0002`, …). The
+`DIDAS` part keeps them apart from swiyu's own numbering, such as its change
+dossiers (`CD-NNN`), when they are discussed upstream. Use the full number in
+the file name, the title, the issue and the upstream submission.
+
 ## Proposal front matter
 
 Each proposal starts with front matter that the site shows as a facts panel:
 
 ```yaml
 ---
-title: "CR-0001: Short title"
-cr: CR-0001
+title: "CR-DIDAS-0001: Short title"
+cr: CR-DIDAS-0001
 status: Draft            # see statuses below
 sectors: [health, education]   # ids from the DIDAS working groups
 steward: TBD

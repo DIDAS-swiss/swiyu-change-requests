@@ -1,6 +1,6 @@
 ## Proposal
 
-<!-- e.g. CR-0003: Short title -->
+<!-- e.g. CR-DIDAS-0003: Short title -->
 
 Discussion issue: #
 
@@ -8,7 +8,7 @@ Steward: <!-- name -->
 
 ## Author checklist
 
-- [ ] File named `proposals/NNNN-short-title.md` with the next free number
+- [ ] File named `proposals/CR-DIDAS-NNNN-short-title.md` with the next free number
 - [ ] All template sections filled in (use "n/a" where not applicable)
 - [ ] Every claim verified against the current swiyu spec in swiyu-admin-ch
 - [ ] Every claim referenced with a commit-pinned permalink
