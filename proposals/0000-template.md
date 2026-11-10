@@ -11,6 +11,19 @@
 | Discussion | Link to the issue in this repository |
 | Upstream | Link to the swiyu issue/discussion once submitted |
 
+## Governance
+
+See [GOVERNANCE.md](../GOVERNANCE.md). Filled in by the steward.
+
+| Item | Value |
+| --- | --- |
+| Steward | Name |
+| Working group(s) consulted | Name(s) |
+| Consultation period | YYYY-MM-DD to YYYY-MM-DD |
+| Early notice | n/a, or: authorised by council on YYYY-MM-DD, sent YYYY-MM-DD (link) |
+| Council | Name of council |
+| Council decision | pending / endorsed / returned / rejected, YYYY-MM-DD (link to minutes) |
+
 ## Summary
 
 One paragraph: what should change and why.
@@ -29,6 +42,7 @@ Who is affected and how? Tick all that apply and explain.
 - [ ] Wallet providers
 - [ ] Holders (end users)
 - [ ] Integrators / solution vendors
+- [ ] Governing authorities (federal, cantonal, sectoral)
 - [ ] Trust infrastructure operators
 
 Include cost, effort, timeline or interoperability consequences where known.
@@ -49,7 +63,8 @@ Security, privacy, compatibility, migration or operational concerns.
 ## Alignment with standards
 
 Relation to relevant standards and profiles (e.g. OpenID4VC, SD-JWT VC,
-HAIP, eIDAS 2.0 / EUDI ARF, W3C, IETF), and to other ecosystems.
+HAIP, OpenID Federation, eIDAS 2.0 / EUDI ARF, ETSI, W3C, IETF), and to other
+ecosystems.
 
 ## Migration and backwards compatibility
 
@@ -58,6 +73,16 @@ How existing deployments would transition.
 ## Open questions
 
 - …
+
+## Community input
+
+Filled in by the steward at the end of consultation: who was consulted, the
+position of each working group, main points raised, how they were addressed,
+and any dissenting views.
+
+| Working group / participant | Position | Main points |
+| --- | --- | --- |
+| | support / support with changes / object / abstain | |
 
 ## Outcome
 

@@ -1,13 +1,14 @@
 name: Change request
 description: Propose a change to a swiyu specification, API or trust framework
 title: "[CR] "
-labels: ["change-request", "status: discussion"]
+labels: ["change-request", "status: discussion", "needs-steward"]
 body:
   - type: markdown
     attributes:
       value: |
         Use this to start the discussion on a change you would like the swiyu team to consider.
-        Once there is enough input, the change is written up as a proposal in `proposals/` (see CONTRIBUTING.md).
+        A steward is assigned to every change request. Before anything is sent to the swiyu team it goes through
+        working group consultation and council endorsement (see GOVERNANCE.md).
         **Do not report security vulnerabilities here.**
   - type: dropdown
     id: area
@@ -52,9 +53,28 @@ body:
     attributes:
       label: References
       description: Standards, other ecosystems, implementation experience.
+  - type: input
+    id: working-groups
+    attributes:
+      label: Suggested working group(s)
+      description: Which DIDAS working group(s) should be consulted? The steward decides.
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Timing
+      description: Is there a swiyu deadline (spec freeze, release, consultation) that may require an early notice?
+      options:
+        - No known deadline
+        - Deadline known (describe in References)
+  - type: textarea
+    id: interests
+    attributes:
+      label: Disclosure of interests
+      description: Any commercial or organisational interest relevant to this topic.
   - type: checkboxes
     id: coauthor
     attributes:
       label: Contribution
       options:
         - label: I am willing to help write the proposal
+        - label: I am willing to act as steward (if I am a DIDAS steward)

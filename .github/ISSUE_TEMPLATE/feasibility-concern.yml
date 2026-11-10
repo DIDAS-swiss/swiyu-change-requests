@@ -1,7 +1,7 @@
 name: Feasibility concern
 description: Something in swiyu is hard, costly or impossible for ecosystem participants to implement or operate
 title: "[Feasibility] "
-labels: ["feasibility", "status: discussion"]
+labels: ["feasibility", "status: discussion", "needs-steward"]
 body:
   - type: markdown
     attributes:
@@ -19,6 +19,7 @@ body:
         - Verifier / relying party
         - Wallet provider
         - Integrator / solution vendor
+        - Governing authority (federal, cantonal, sectoral)
         - Other
     validations:
       required: true
@@ -41,3 +42,8 @@ body:
     attributes:
       label: Possible solutions
       description: Optional ideas for how swiyu could address this.
+  - type: textarea
+    id: interests
+    attributes:
+      label: Disclosure of interests
+      description: Any commercial or organisational interest relevant to this topic.

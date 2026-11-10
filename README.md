@@ -28,24 +28,34 @@ What does **not** belong here:
 
 ## How it works
 
+Every proposal is sent to swiyu on behalf of DIDAS, so it always needs input
+from the community: a **steward** guides it, **working groups** are consulted,
+and a **council** endorses it before submission.
+
 ```
-Idea ──► Issue (discussion) ──► Proposal PR ──► DIDAS review ──► Submitted upstream ──► Outcome
-                                (proposals/)    (consensus)      (link to swiyu)       accepted / declined / withdrawn
+Issue ──► Draft PR ──► Consultation ──► Council decision ──► Submitted ──► Outcome
+          steward      working groups   endorse / return /   upstream      accepted / declined /
+          assigned     ≥ 14 days        reject               link          implemented / withdrawn
 ```
 
-1. **Open an issue** using the *Change request* or *Feasibility concern* template
-   to check interest and collect input.
-2. **Write a proposal** once there is enough substance: copy
-   [`proposals/0000-template.md`](proposals/0000-template.md) and open a pull request.
-3. **Review**: DIDAS members review the PR. A proposal is merged once there is
-   rough consensus that it is ready for the swiyu team.
-4. **Submit upstream**: a maintainer forwards the proposal to the swiyu team
+1. **Open an issue** using the *Change request* or *Feasibility concern* template.
+   A steward is assigned.
+2. **Write a proposal**: copy [`proposals/0000-template.md`](proposals/0000-template.md)
+   and open a draft pull request.
+3. **Consultation**: the steward opens the proposal to the responsible working
+   group(s) and the community for at least 14 days and summarises the input.
+4. **Council decision**: the council endorses, returns or rejects the proposal.
+   Only endorsed proposals are merged.
+5. **Submit upstream**: the steward submits the proposal to the swiyu team
    (typically via [swiyu-admin-ch/community](https://github.com/swiyu-admin-ch/community))
-   and records the link in the proposal.
-5. **Track the outcome**: the proposal's status and the [index](proposals/README.md)
-   are updated when swiyu responds.
+   and records the link.
+6. **Track the outcome** in the proposal and the [index](proposals/README.md).
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for details, statuses and labels.
+Time-critical topics can reach swiyu earlier through a council-authorised
+**early notice**.
+
+- [GOVERNANCE.md](GOVERNANCE.md): roles, gates, early notice, transparency
+- [CONTRIBUTING.md](CONTRIBUTING.md): step-by-step workflow, statuses, labels
 
 ## Proposals
 
