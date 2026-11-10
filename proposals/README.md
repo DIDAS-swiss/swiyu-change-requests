@@ -6,4 +6,4 @@ All change requests, newest last. Statuses are explained in
 
 | CR | Title | Sectors | Steward | Status | Upstream |
 | --- | --- | --- | --- | --- | --- |
-| — | *None yet. To raise one, open a [Change request](https://github.com/DIDAS-swiss/swiyu-change-requests/issues/new?template=change-request.yml) issue.* | | | | |
+| [CR-0001](0001-sectoral-issuer-authorization.md) | Sectoral governing authorities managing authorized issuers per credential type | cross-sector, health | TBD | Draft | — |
