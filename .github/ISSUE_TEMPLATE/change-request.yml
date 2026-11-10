@@ -1,0 +1,105 @@
+name: Change request
+description: Propose a change to a swiyu specification, API or trust framework
+title: "[CR] "
+labels: ["change-request", "status: discussion", "needs-steward"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this to start the discussion on a change you would like the swiyu team to consider.
+        A steward is assigned to every change request. Before DIDAS sends anything to the swiyu team it is
+        consulted with the sectoral working groups and endorsed by the sectoral councils (see GOVERNANCE.md).
+        Please link the swiyu specification for every statement about how swiyu works.
+        **Do not report security vulnerabilities here.**
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      multiple: true
+      options:
+        - Issuance (OID4VCI, swiyu-issuer)
+        - Verification (OID4VP, swiyu-verifier)
+        - Wallet / holder experience
+        - Trust registry / trust statements / governance
+        - Identifiers (DIDs, DID resolution)
+        - Status lists / revocation
+        - Credential format (SD-JWT VC, OCA, schemas)
+        - Security (crypto, keys, attestation)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is the current situation and why is it a problem? Link the exact spec section or code in github.com/swiyu-admin-ch for every statement about swiyu.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Ecosystem impact
+      description: Who is affected (issuers, verifiers, wallets, holders, integrators) and how?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: What should change? A first idea is fine.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Standards, other ecosystems, implementation experience.
+  - type: dropdown
+    id: sectors
+    attributes:
+      label: Sectors affected
+      description: Their working groups are consulted and their councils decide. The steward confirms.
+      multiple: true
+      options:
+        - Banking
+        - Insurance
+        - Health
+        - Pharma
+        - Public Sector
+        - Education
+        - Retail (eCommerce & Retail)
+        - Mobility
+        - Hospitality
+        - Industry & Manufacturing
+        - Digital & Telecom
+        - Energy & Utilities
+        - Real Estate
+        - Sport
+        - Cross-sector / all
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Use cases and trust flows
+      description: Links to entries in the DIDAS Use Case Repository or Trust Flow Diagram Repository that run into this problem.
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Timing
+      description: Is there a swiyu deadline (spec freeze, release, consultation) that may require an early notice?
+      options:
+        - No known deadline
+        - Deadline known (describe in References)
+  - type: textarea
+    id: interests
+    attributes:
+      label: Disclosure of interests
+      description: Any commercial or organisational interest relevant to this topic.
+  - type: checkboxes
+    id: coauthor
+    attributes:
+      label: Contribution
+      options:
+        - label: I am willing to help write the proposal
+        - label: I am willing to act as steward (if I am a DIDAS steward)

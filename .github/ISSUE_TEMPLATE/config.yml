@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Bug in a swiyu component
+    url: https://github.com/swiyu-admin-ch
+    about: Report bugs directly in the affected swiyu-admin-ch repository.
+  - name: swiyu community
+    url: https://github.com/swiyu-admin-ch/community
+    about: General questions and discussion with the swiyu team.

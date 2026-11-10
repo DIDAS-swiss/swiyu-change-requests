@@ -1,0 +1,72 @@
+name: Feasibility concern
+description: Something in swiyu is hard, costly or impossible for ecosystem participants to implement or operate
+title: "[Feasibility] "
+labels: ["feasibility", "status: discussion", "needs-steward"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe an obstacle you have hit (or expect to hit) when building on swiyu.
+        Concerns that need a change on the swiyu side are turned into proposals in `proposals/`.
+        **Do not report security vulnerabilities here.**
+  - type: dropdown
+    id: role
+    attributes:
+      label: Your role
+      multiple: true
+      options:
+        - Issuer
+        - Verifier / relying party
+        - Wallet provider
+        - Integrator / solution vendor
+        - Governing authority (federal, cantonal, sectoral)
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: sectors
+    attributes:
+      label: Sectors affected
+      multiple: true
+      options:
+        - Banking
+        - Insurance
+        - Health
+        - Pharma
+        - Public Sector
+        - Education
+        - Retail (eCommerce & Retail)
+        - Mobility
+        - Hospitality
+        - Industry & Manufacturing
+        - Digital & Telecom
+        - Energy & Utilities
+        - Real Estate
+        - Sport
+        - Cross-sector / all
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: Concern
+      description: What makes it hard to implement or operate? Link the exact spec section or code in github.com/swiyu-admin-ch.
+    validations:
+      required: true
+  - type: textarea
+    id: consequence
+    attributes:
+      label: Consequence
+      description: Effort, cost, timeline, legal or interoperability consequences.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Possible solutions
+      description: Optional ideas for how swiyu could address this.
+  - type: textarea
+    id: interests
+    attributes:
+      label: Disclosure of interests
+      description: Any commercial or organisational interest relevant to this topic.

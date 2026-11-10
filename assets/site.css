@@ -1,0 +1,246 @@
+/* DIDAS swiyu Change Requests: page styles for GitHub Pages. Copied from the DIDAS Use Case Repository so the DIDAS sites look the same. */
+
+:root {
+  --bg: #ffffff;
+  --ink: #1f2328;
+  --muted: #59636e;
+  --rule: #d1d9e0;
+  --wash: #f6f8fa;
+  --accent: #1971c2;    /* DIDAS blue, as on the glossary */
+  --ok-bg: #e6f4ea;   --ok-ink: #1a7f37;
+  --warn-bg: #fff4e5; --warn-ink: #9a6700;
+  --gap-bg: #ffebe9;  --gap-ink: #cf222e;
+  --info-bg: #ddf4ff; --info-ink: #0969da;
+}
+:root[data-theme="dark"] {
+  --bg: #0d1117;
+  --ink: #e6edf3;
+  --muted: #9198a1;
+  --rule: #3d444d;
+  --wash: #151b23;
+  --accent: #4dabf7;
+  --ok-bg: #12261e;   --ok-ink: #3fb950;
+  --warn-bg: #272115; --warn-ink: #d29922;
+  --gap-bg: #2d1517;  --gap-ink: #f85149;
+  --info-bg: #0c2d4b; --info-ink: #58a6ff;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+}
+a { color: var(--accent); }
+
+/* ===========================================================================
+   Shared DIDAS masthead. Same markup and geometry as the other DIDAS sites;
+   only the four --mh-* values differ between them.
+   =========================================================================== */
+.site-masthead {
+  --mh-rule:  var(--rule);
+  --mh-ink:   var(--muted);
+  --mh-hover: var(--accent);
+  --mh-wash:  var(--wash);
+  --mh-width: 1080px;
+
+  border-bottom: 1px solid var(--mh-rule);
+  background: var(--bg);
+}
+.site-masthead .bar {
+  max-width: var(--mh-width);
+  margin-inline: auto;
+  padding-inline: 24px;
+  padding-block: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 24px;
+}
+.site-masthead .id { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 12px; }
+.site-masthead .didas { display: inline-flex; align-items: center; line-height: 0; }
+.site-masthead .didas img { height: 20px; width: auto; display: block; }
+:root[data-theme="dark"] .site-masthead .didas { background: #fff; padding: 3px 7px; border-radius: 3px; }
+.site-masthead .eyebrow,
+.site-masthead .repolink {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.72rem;
+  color: var(--mh-ink);
+}
+.site-masthead .eyebrow { margin: 0; letter-spacing: 0.1em; text-transform: uppercase; }
+.site-masthead .repolink {
+  display: inline-flex; align-items: center; gap: 7px;
+  letter-spacing: 0.06em; text-decoration: none; white-space: nowrap;
+}
+.site-masthead .repolink svg { flex: none; }
+.site-masthead .repolink span { border-bottom: 1px solid var(--mh-rule); padding-bottom: 2px; }
+.site-masthead .repolink:hover { color: var(--mh-hover); }
+.site-masthead .repolink:hover span { border-bottom-color: currentColor; }
+.site-masthead .tools { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 14px; }
+.site-masthead .seg {
+  display: inline-flex; align-items: stretch;
+  border: 1px solid var(--mh-rule); border-radius: 4px; overflow: hidden;
+}
+.site-masthead button {
+  appearance: none; -webkit-appearance: none;
+  background: none; border: 0; margin: 0; padding: 5px 8px;
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--mh-ink); cursor: pointer; font: inherit; line-height: 0;
+}
+.site-masthead .seg button + button { border-left: 1px solid var(--mh-rule); }
+.site-masthead button:hover { color: var(--mh-hover); }
+.site-masthead button[aria-pressed="true"] { color: var(--mh-hover); background: var(--mh-wash); }
+.site-masthead button svg { width: 14px; height: 14px; display: block; }
+.site-masthead .seg.text button {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  line-height: 1; padding-block: 4px;
+}
+.site-masthead .seg.text button:first-child { font-size: 0.62rem; }
+.site-masthead .seg.text button:last-child  { font-size: 0.88rem; }
+/* === end shared DIDAS masthead ========================================== */
+
+.site-nav { border-bottom: 1px solid var(--rule); background: var(--wash); }
+.site-nav .inner,
+.site-footer .inner,
+.content { max-width: 1080px; margin-inline: auto; padding-inline: 24px; }
+.site-nav .inner { display: flex; flex-wrap: wrap; gap: 4px 20px; padding-block: 10px; font-size: 0.92rem; }
+.site-nav a { color: var(--muted); text-decoration: none; padding-block: 2px; }
+.site-nav a:hover,
+.site-nav a[aria-current="page"] { color: var(--ink); box-shadow: inset 0 -2px 0 var(--accent); }
+.site-nav .cta { margin-left: auto; color: var(--accent); font-weight: 600; }
+
+.content { padding-block: 32px 48px; }
+.content h1 { font-size: 2rem; line-height: 1.25; letter-spacing: -0.01em; margin: 0 0 16px; }
+.content h2 { font-size: 1.35rem; margin: 36px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--rule); }
+.content h3 { font-size: 1.1rem; margin: 28px 0 8px; }
+.content blockquote {
+  margin: 16px 0; padding: 10px 16px;
+  border-left: 4px solid var(--warn-ink); background: var(--warn-bg); color: var(--ink);
+}
+.content blockquote p { margin: 4px 0; }
+.content code { font-size: 0.88em; background: var(--wash); padding: 0.1em 0.35em; border-radius: 4px; }
+.content pre { background: var(--wash); padding: 14px 16px; border-radius: 6px; overflow-x: auto; line-height: 1.35; }
+.content pre code { background: none; padding: 0; }
+
+/* Tables scroll inside themselves rather than widening the page on phones. */
+.content table {
+  display: block; max-width: 100%; overflow-x: auto;
+  border-collapse: collapse; margin: 16px 0; font-size: 0.93rem;
+}
+.content th, .content td { border: 1px solid var(--rule); padding: 6px 12px; text-align: left; vertical-align: top; }
+.content th { background: var(--wash); }
+
+/* Facts panel built from an entry's front matter. */
+.facts {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  margin: 0 0 28px; padding: 0;
+  background: var(--wash); border: 1px solid var(--rule); border-radius: 6px; overflow: hidden;
+}
+/* Hairlines between cells that leave no filled gap where a row is short. */
+.facts > div { padding: 10px 14px; box-shadow: 1px 1px 0 var(--rule); }
+.facts > div.wide { grid-column: span 2; }
+.facts dt { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.facts dd { margin: 2px 0 0; font-size: 0.95rem; }
+@media (max-width: 520px) { .facts > div.wide { grid-column: auto; } }
+
+.pill { display: inline-block; padding: 1px 10px; border-radius: 999px; font-size: 0.85rem; font-weight: 600; }
+.pill { background: var(--info-bg); color: var(--info-ink); }
+.supply-available, .stage-active, .stage-maintained { background: var(--ok-bg); color: var(--ok-ink); }
+.supply-emerging { background: var(--warn-bg); color: var(--warn-ink); }
+.supply-missing { background: var(--gap-bg); color: var(--gap-ink); }
+.stage-deprecated { background: var(--wash); color: var(--muted); }
+
+.edit { margin-top: 48px; padding-top: 12px; border-top: 1px solid var(--rule); font-size: 0.88rem; color: var(--muted); }
+.site-footer { border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.85rem; }
+.site-footer .inner { padding-block: 18px; }
+.site-footer a { color: var(--muted); }
+
+/* Sector names in the facts panel, and the selector above sector tables. */
+.facts .sector { display: block; }
+.sector-filter {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px;
+  margin: 16px 0 4px; font-size: 0.9rem; color: var(--muted);
+}
+.sector-filter select {
+  max-width: 100%; padding: 5px 8px; font: inherit; color: var(--ink);
+  background: var(--bg); border: 1px solid var(--rule); border-radius: 4px;
+}
+.sector-count { font-variant-numeric: tabular-nums; }
+
+/* Schema federated from I14Y, appended to credential pages. */
+.federated { margin-top: 40px; }
+.federated .note { font-size: 0.88rem; color: var(--muted); }
+.federated td code { white-space: nowrap; }
+
+/* Anchors on use-case pages. */
+.anchors { margin-top: 40px; }
+.anchors .note { font-size: 0.88rem; color: var(--muted); }
+.anchors dt { font-weight: 600; margin-top: 16px; }
+.anchors dd { margin: 4px 0 0; }
+.anchors ul { margin: 4px 0; padding-left: 20px; }
+.anchors li { margin: 4px 0; }
+.tag {
+  display: inline-block; padding: 0 6px; border: 1px solid var(--rule); border-radius: 4px;
+  font-size: 0.78rem; color: var(--muted);
+}
+
+/* Calls to action: register a use case. */
+.gh-only { display: none; }   /* README buttons for GitHub; the site has its own */
+.site-nav .cta {
+  background: var(--accent); color: #fff; padding: 2px 12px; border-radius: 4px;
+}
+.site-nav .cta:hover, .site-nav .cta[aria-current="page"] { color: #fff; box-shadow: none; opacity: 0.9; }
+.hero {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 24px;
+  margin: 0 0 32px; padding: 20px 24px;
+  border: 1px solid var(--rule); border-left: 4px solid var(--accent); border-radius: 6px; background: var(--wash);
+}
+.hero > div:first-child { flex: 1 1 360px; }
+.hero-title { margin: 0 0 4px; font-size: 1.2rem; font-weight: 600; }
+.hero-text { margin: 0; color: var(--muted); }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.button {
+  display: inline-block; padding: 8px 14px; border-radius: 6px; font-weight: 600; font-size: 0.95rem;
+  text-decoration: none; border: 1px solid var(--rule); color: var(--ink); background: var(--bg);
+}
+.button:hover { border-color: var(--accent); color: var(--accent); }
+.button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.button.primary:hover { color: #fff; opacity: 0.9; }
+.register { margin-top: 24px; }
+
+/* Backlog page. */
+.lifecycle { display: flex; flex-wrap: wrap; align-items: stretch; gap: 6px; margin: 20px 0 12px; }
+.lifecycle .step {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 2px; min-width: 110px;
+  padding: 10px 14px; border: 1px solid var(--rule); border-radius: 6px; background: var(--wash);
+  color: var(--ink); font: inherit; cursor: pointer; text-align: left;
+}
+.lifecycle .step .count { font-size: 1.5rem; font-weight: 600; line-height: 1.1; }
+.lifecycle .step .label { font-size: 0.85rem; color: var(--muted); }
+.lifecycle .step[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 -3px 0 var(--accent); }
+.lifecycle .arrow { align-self: center; color: var(--muted); }
+.filters { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin: 8px 0 4px; font-size: 0.9rem; color: var(--muted); }
+.filters select, .filters input {
+  max-width: min(100%, 22rem); padding: 5px 8px; font: inherit; color: var(--ink);
+  background: var(--bg); border: 1px solid var(--rule); border-radius: 4px; margin-left: 4px;
+}
+.step-candidate { background: var(--info-bg); color: var(--info-ink); }
+.step-taken { background: var(--warn-bg); color: var(--warn-ink); }
+.step-drafting { background: var(--warn-bg); color: var(--warn-ink); }
+.step-published { background: var(--ok-bg); color: var(--ok-ink); }
+.uc-details { margin-top: 4px; font-size: 0.9rem; }
+.uc-details summary { cursor: pointer; color: var(--muted); }
+.uc-details p { margin: 6px 0; max-width: 70ch; }
+.step-not-pursued { background: var(--wash); color: var(--muted); }
+
+/* ---------------------------------------------------------------------------
+   swiyu Change Requests only: proposal status pills, on the shared tokens.
+   --------------------------------------------------------------------------- */
+.status-draft, .status-withdrawn { background: var(--wash); color: var(--muted); }
+.status-in-consultation, .status-awaiting-council { background: var(--warn-bg); color: var(--warn-ink); }
+.status-endorsed, .status-submitted { background: var(--info-bg); color: var(--info-ink); }
+.status-accepted, .status-implemented { background: var(--ok-bg); color: var(--ok-ink); }
+.status-declined { background: var(--gap-bg); color: var(--gap-ink); }
