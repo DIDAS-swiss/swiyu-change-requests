@@ -16,7 +16,7 @@ updated: 2026-11-10
 | Area | trust |
 | Sectors affected | Cross-sector: every sector with credential types that a sectoral body should govern. First evidence from health. |
 | Affected swiyu artefacts | Trust Protocol 2.0 (protected issuance, piaTS, piTLS, trust registry API); swiss-profile-trust 1.0 (root trust anchors); swiyu-registry-trust-data-service; swiyu Wallet; swiyu-verifier. See [Sources](#sources). |
-| Discussion | TBD |
+| Discussion | [Issue 1](https://github.com/DIDAS-swiss/swiyu-change-requests/issues/1) |
 | Upstream | — |
 
 ## Governance
