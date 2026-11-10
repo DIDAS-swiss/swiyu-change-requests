@@ -1,13 +1,13 @@
 ---
-title: "CR-0001: Sectoral governing authorities managing authorized issuers per credential type"
-cr: CR-0001
+title: "CR-DIDAS-0001: Sectoral governing authorities managing authorized issuers per credential type"
+cr: CR-DIDAS-0001
 status: Draft
 sectors: [cross-sector, health]
 steward: TBD
 updated: 2026-11-10
 ---
 
-# CR-0001: Sectoral governing authorities managing authorized issuers per credential type
+# CR-DIDAS-0001: Sectoral governing authorities managing authorized issuers per credential type
 
 | Field | Value |
 | --- | --- |

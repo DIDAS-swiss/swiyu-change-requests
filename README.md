@@ -16,7 +16,7 @@ submits them to the swiyu team in its role as swiyu orchestrator.
 
 | CR | Title | Sectors | Status |
 | --- | --- | --- | --- |
-| [CR-0001](proposals/0001-sectoral-issuer-authorization.md) | Sectoral governing authorities managing authorized issuers per credential type | cross-sector, health | Draft |
+| [CR-DIDAS-0001](proposals/CR-DIDAS-0001-sectoral-issuer-authorization.md) | Sectoral governing authorities managing authorized issuers per credential type | cross-sector, health | Draft |
 
 The full list with stewards and upstream links is in the
 [index](proposals/README.md).
