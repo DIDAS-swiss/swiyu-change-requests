@@ -23,11 +23,34 @@ body:
         - Other
     validations:
       required: true
+  - type: dropdown
+    id: sectors
+    attributes:
+      label: Sectors affected
+      multiple: true
+      options:
+        - Banking
+        - Insurance
+        - Health
+        - Pharma
+        - Public Sector
+        - Education
+        - Retail (eCommerce & Retail)
+        - Mobility
+        - Hospitality
+        - Industry & Manufacturing
+        - Digital & Telecom
+        - Energy & Utilities
+        - Real Estate
+        - Sport
+        - Cross-sector / all
+    validations:
+      required: true
   - type: textarea
     id: concern
     attributes:
       label: Concern
-      description: What makes it hard to implement or operate? Link the spec section, API or component.
+      description: What makes it hard to implement or operate? Link the exact spec section or code in github.com/swiyu-admin-ch.
     validations:
       required: true
   - type: textarea

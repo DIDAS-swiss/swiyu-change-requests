@@ -1,15 +1,23 @@
+---
+title: "CR-NNNN: Title"
+cr: CR-NNNN
+status: Draft
+sectors: []
+steward: TBD
+updated: YYYY-MM-DD
+---
+
 # CR-NNNN: Title
 
 | Field | Value |
 | --- | --- |
-| Status | Draft |
 | Authors | Name (Organisation), Name (Organisation) |
 | Created | YYYY-MM-DD |
-| Last updated | YYYY-MM-DD |
 | Area | e.g. issuance / verification / wallet / trust / identifiers / status / credential-format / security |
-| Affected swiyu artefacts | Links to spec sections, repositories, APIs |
+| Sectors affected | e.g. health, education (ids of the DIDAS working groups) |
+| Affected swiyu artefacts | Commit-pinned links to spec sections, repositories, APIs |
 | Discussion | Link to the issue in this repository |
-| Upstream | Link to the swiyu issue/discussion once submitted |
+| Upstream | Link to the swiyu issue or discussion once submitted |
 
 ## Governance
 
@@ -20,9 +28,11 @@ See [GOVERNANCE.md](../GOVERNANCE.md). Filled in by the steward.
 | Steward | Name |
 | Working group(s) consulted | Name(s) |
 | Consultation period | YYYY-MM-DD to YYYY-MM-DD |
-| Early notice | n/a, or: authorised by council on YYYY-MM-DD, sent YYYY-MM-DD (link) |
-| Council | Name of council |
-| Council decision | pending / endorsed / returned / rejected, YYYY-MM-DD (link to minutes) |
+| Council(s) | Name(s), or "no council yet: working group position stands in" |
+| Council decision(s) | pending / endorsed / returned / rejected, YYYY-MM-DD (link to minutes) |
+| Cross-sector consolidation | n/a, or: consolidated by DIDAS as orchestrator on YYYY-MM-DD |
+| Steering Circle | n/a, or: escalated on YYYY-MM-DD, decision (link) |
+| Early notice | n/a, or: authorised by … on YYYY-MM-DD, sent YYYY-MM-DD (link) |
 
 ## Summary
 
@@ -30,8 +40,8 @@ One paragraph: what should change and why.
 
 ## Problem
 
-Describe the current situation and why it is a problem. Quote or link the exact
-spec section, API or behaviour concerned.
+Describe the current situation and why it is a problem. Every claim links to
+the spec or code with a commit-pinned permalink.
 
 ## Ecosystem impact
 
@@ -46,6 +56,16 @@ Who is affected and how? Tick all that apply and explain.
 - [ ] Trust infrastructure operators
 
 Include cost, effort, timeline or interoperability consequences where known.
+
+## Evidence from use cases and trust flows
+
+The use cases, trust flows and terms that run into this problem.
+
+| Kind | Link | How it is affected |
+| --- | --- | --- |
+| Use case | [Use Case Repository](https://didas-swiss.github.io/use-case-repository/) entry | |
+| Trust flow | [Trust Flow Diagram Repository](https://github.com/DIDAS-swiss/Trust-Flow-Diagram-Repository) flow | |
+| Term | [DIDAS Glossary](https://didas-swiss.github.io/didas-glossary/) term | |
 
 ## Proposed change
 
@@ -70,17 +90,29 @@ ecosystems.
 
 How existing deployments would transition.
 
+## Sources
+
+Every claim above is verified against these sources (see
+[CONTRIBUTING.md](../CONTRIBUTING.md#verifying-and-referencing-the-spec)).
+
+| Document / component | Version and status (as stated) | Commit checked | Date checked |
+| --- | --- | --- | --- |
+| e.g. [Trust Protocol](https://github.com/swiyu-admin-ch/swiyu-admin-ch.github.io/blob/<sha>/_specifications/trust-protocol-v2-0.md) | 2.0, draft, last edited YYYY-MM-DD | `<sha>` | YYYY-MM-DD |
+
+Discrepancies found between spec and implementation, or within the swiyu
+documentation:
+
+- n/a
+
 ## Open questions
 
 - …
 
 ## Community input
 
-Filled in by the steward at the end of consultation: who was consulted, the
-position of each working group, main points raised, how they were addressed,
-and any dissenting views.
+Filled in by the steward at the end of consultation.
 
-| Working group / participant | Position | Main points |
+| Working group / council / participant | Position | Main points |
 | --- | --- | --- |
 | | support / support with changes / object / abstain | |
 

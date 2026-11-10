@@ -7,8 +7,9 @@ body:
     attributes:
       value: |
         Use this to start the discussion on a change you would like the swiyu team to consider.
-        A steward is assigned to every change request. Before anything is sent to the swiyu team it goes through
-        working group consultation and council endorsement (see GOVERNANCE.md).
+        A steward is assigned to every change request. Before DIDAS sends anything to the swiyu team it is
+        consulted with the sectoral working groups and endorsed by the sectoral councils (see GOVERNANCE.md).
+        Please link the swiyu specification for every statement about how swiyu works.
         **Do not report security vulnerabilities here.**
   - type: dropdown
     id: area
@@ -31,7 +32,7 @@ body:
     id: problem
     attributes:
       label: Problem
-      description: What is the current situation and why is it a problem? Link the spec section, API or repository concerned.
+      description: What is the current situation and why is it a problem? Link the exact spec section or code in github.com/swiyu-admin-ch for every statement about swiyu.
     validations:
       required: true
   - type: textarea
@@ -53,11 +54,35 @@ body:
     attributes:
       label: References
       description: Standards, other ecosystems, implementation experience.
-  - type: input
-    id: working-groups
+  - type: dropdown
+    id: sectors
     attributes:
-      label: Suggested working group(s)
-      description: Which DIDAS working group(s) should be consulted? The steward decides.
+      label: Sectors affected
+      description: Their working groups are consulted and their councils decide. The steward confirms.
+      multiple: true
+      options:
+        - Banking
+        - Insurance
+        - Health
+        - Pharma
+        - Public Sector
+        - Education
+        - Retail (eCommerce & Retail)
+        - Mobility
+        - Hospitality
+        - Industry & Manufacturing
+        - Digital & Telecom
+        - Energy & Utilities
+        - Real Estate
+        - Sport
+        - Cross-sector / all
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Use cases and trust flows
+      description: Links to entries in the DIDAS Use Case Repository or Trust Flow Diagram Repository that run into this problem.
   - type: dropdown
     id: urgency
     attributes:

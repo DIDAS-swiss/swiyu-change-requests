@@ -1,66 +1,83 @@
-# swiyu change requests
+# swiyu Change Requests
 
-Change request proposals from the [DIDAS](https://didas.swiss) community for the
-[swiyu](https://github.com/swiyu-admin-ch) team to consider.
+**Website: <https://didas-swiss.github.io/swiyu-change-requests/>**
 
-swiyu is the Swiss e-ID trust infrastructure. Its specifications and reference
-components are developed by the Federal Administration in the
-[swiyu-admin-ch](https://github.com/swiyu-admin-ch) GitHub organisation. This
-repository is where DIDAS members **draft, discuss and consolidate** proposed
-changes before they are handed to the swiyu team, so that the ecosystem
-(issuers, verifiers, wallets, integrators) can actually implement and operate
-the infrastructure.
+Change requests from the [DIDAS](https://www.didas.swiss) community for the
+swiyu team to consider. swiyu is the Swiss e-ID trust infrastructure; its
+specifications and reference components are developed by the Federal
+Administration in [swiyu-admin-ch](https://github.com/swiyu-admin-ch). Here,
+DIDAS members raise, consult and consolidate the changes the ecosystem needs so
+that issuers, verifiers, wallets and sectors can actually build on swiyu. DIDAS
+submits them to the swiyu team in its role as swiyu orchestrator.
+
+<p class="gh-only"><a href="https://github.com/DIDAS-swiss/swiyu-change-requests/issues/new?template=change-request.yml"><b>+ Raise a change request</b></a> · <a href="https://github.com/DIDAS-swiss/swiyu-change-requests/issues/new?template=feasibility-concern.yml">Report a feasibility concern</a> · <a href="https://didas-swiss.github.io/swiyu-change-requests/">Open the website</a></p>
+
+## Change requests
+
+| CR | Title | Sectors | Status |
+| --- | --- | --- | --- |
+| — | *None yet.* | | |
+
+The full list with stewards and upstream links is in the
+[index](proposals/README.md).
+
+## How it works
+
+Every change request is submitted on behalf of DIDAS, so it always needs input
+from the community: a **steward** guides it, the **sectoral working groups**
+are consulted, and the **sectoral councils** endorse it. Cross-sector conflicts
+and strategic questions go to the swiyu **Steering Circle**.
+
+```
+Issue ──► Draft PR ──► Consultation ──► Council decision ──► Submitted ──► Outcome
+          steward,     sectoral WGs,    sectoral council(s);  by DIDAS as    accepted /
+          spec         ≥ 14 days        cross-sector:          orchestrator   declined /
+          verified                      consolidated, or                      implemented /
+                                        Steering Circle                       withdrawn
+```
+
+1. **Open an issue** with the *Change request* or *Feasibility concern* form.
+   A steward is assigned and the affected sectors are named.
+2. **Write a proposal** from [`proposals/0000-template.md`](proposals/0000-template.md)
+   in a draft pull request. Every claim about swiyu is verified against the
+   current specification and referenced with a commit-pinned link.
+3. **Consultation** with the working groups of the affected sectors for at
+   least 14 days. The steward summarises the input, including dissent.
+4. **Council decision** by the sectoral council(s). Only endorsed change
+   requests are merged.
+5. **Submission** to the swiyu team by DIDAS as orchestrator, typically in
+   [swiyu-admin-ch/community](https://github.com/swiyu-admin-ch/community).
+6. **Outcome** recorded in the proposal, the index and the changelog, and
+   reported to the Steering Circle.
+
+Time-critical topics can reach swiyu earlier through an authorised **early
+notice** that describes the problem only.
+
+- [GOVERNANCE.md](GOVERNANCE.md): ecosystem governance, roles, gates, escalation
+- [CONTRIBUTING.md](CONTRIBUTING.md): step-by-step workflow, spec verification, statuses, labels
+- [STEWARDS.md](STEWARDS.md): stewards and sectoral councils
+- [Changelog](changelog/README.md)
 
 ## What belongs here
 
 - Proposed changes to swiyu specifications, profiles, APIs or trust frameworks
-- Ecosystem feasibility concerns: things that are hard, costly or impossible
-  for participants to implement as currently specified
-- Gaps or ambiguities in the documentation that block implementation
+- Ecosystem feasibility concerns: things that are hard, costly or impossible to
+  implement or operate as currently specified
+- Gaps or ambiguities in the swiyu documentation that block implementation
 
-What does **not** belong here:
+Not here:
 
-- Bugs in a specific swiyu component: report them directly in that component's
-  repository (e.g. [swiyu-issuer](https://github.com/swiyu-admin-ch/swiyu-issuer),
-  [swiyu-verifier](https://github.com/swiyu-admin-ch/swiyu-verifier))
+- Bugs in a single swiyu component: report them in that component's
+  repository, e.g. [swiyu-issuer](https://github.com/swiyu-admin-ch/swiyu-issuer)
+  or [swiyu-verifier](https://github.com/swiyu-admin-ch/swiyu-verifier)
 - Security vulnerabilities: follow the swiyu responsible disclosure process,
-  never post them publicly here
+  never post them publicly
 
-## How it works
+## Related DIDAS repositories
 
-Every proposal is sent to swiyu on behalf of DIDAS, so it always needs input
-from the community: a **steward** guides it, **working groups** are consulted,
-and a **council** endorses it before submission.
-
-```
-Issue ──► Draft PR ──► Consultation ──► Council decision ──► Submitted ──► Outcome
-          steward      working groups   endorse / return /   upstream      accepted / declined /
-          assigned     ≥ 14 days        reject               link          implemented / withdrawn
-```
-
-1. **Open an issue** using the *Change request* or *Feasibility concern* template.
-   A steward is assigned.
-2. **Write a proposal**: copy [`proposals/0000-template.md`](proposals/0000-template.md)
-   and open a draft pull request.
-3. **Consultation**: the steward opens the proposal to the responsible working
-   group(s) and the community for at least 14 days and summarises the input.
-4. **Council decision**: the council endorses, returns or rejects the proposal.
-   Only endorsed proposals are merged.
-5. **Submit upstream**: the steward submits the proposal to the swiyu team
-   (typically via [swiyu-admin-ch/community](https://github.com/swiyu-admin-ch/community))
-   and records the link.
-6. **Track the outcome** in the proposal and the [index](proposals/README.md).
-
-Time-critical topics can reach swiyu earlier through a council-authorised
-**early notice**.
-
-- [GOVERNANCE.md](GOVERNANCE.md): roles, gates, early notice, transparency
-- [CONTRIBUTING.md](CONTRIBUTING.md): step-by-step workflow, statuses, labels
-
-## Proposals
-
-The list of all proposals and their status is kept in
-[`proposals/README.md`](proposals/README.md).
+- [DIDAS Glossary](https://didas-swiss.github.io/didas-glossary/): the common vocabulary
+- [Use Case Repository](https://didas-swiss.github.io/use-case-repository/): the use cases that run into the problems raised here
+- [Trust Flow Diagram Repository](https://github.com/DIDAS-swiss/Trust-Flow-Diagram-Repository): the trust flows that show where swiyu falls short
 
 ## Licence
 

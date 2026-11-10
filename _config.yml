@@ -1,0 +1,38 @@
+# GitHub Pages builds this site from the Markdown in the repository with its
+# built-in Jekyll, like the DIDAS Use Case Repository; there is no separate
+# build step. README.md becomes each folder's index page, files without front
+# matter are still rendered, titles come from the first heading, and links to
+# .md files are rewritten to the rendered pages.
+title: DIDAS swiyu Change Requests
+description: >-
+  Change requests from the DIDAS community for the swiyu team to consider,
+  consulted with the sectoral working groups and councils and verified against
+  the swiyu specifications.
+repository: DIDAS-swiss/swiyu-change-requests
+baseurl: /swiyu-change-requests
+url: https://didas-swiss.github.io
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: proposals
+    values:
+      kind: proposal
+
+optional_front_matter:
+  remove_originals: true
+readme_index:
+  remove_originals: true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - LICENSE

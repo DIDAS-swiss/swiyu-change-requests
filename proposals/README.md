@@ -1,9 +1,9 @@
-# Proposal index
+# Change requests
 
-All change request proposals, newest last. See
-[CONTRIBUTING.md](../CONTRIBUTING.md#proposal-statuses) for the meaning of each
-status.
+All change requests, newest last. Statuses are explained in
+[CONTRIBUTING.md](../CONTRIBUTING.md#statuses); the template is
+[0000-template.md](0000-template.md).
 
-| CR | Title | Area | Steward | Status | Upstream |
+| CR | Title | Sectors | Steward | Status | Upstream |
 | --- | --- | --- | --- | --- | --- |
-| — | *No proposals yet. Copy [0000-template.md](0000-template.md) to start one.* | | | | |
+| — | *None yet. To raise one, open a [Change request](https://github.com/DIDAS-swiss/swiyu-change-requests/issues/new?template=change-request.yml) issue.* | | | | |
