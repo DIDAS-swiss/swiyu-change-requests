@@ -66,8 +66,8 @@ Facts, with sources listed below:
   protected at all ([L67-L73][tp-protected]).
 
 Assessment: whether a health professional may practise is decided by cantonal
-authorities and the health trust flow F-01 expects authorisations to be
-checked against such registers. In swiyu, the federal operator would have to issue and
+authorities. The health trust flow F-01 expects authorisations to be checked
+against such registers. In swiyu, the federal operator would have to issue and
 withdraw these authorisations on their behalf, relying on information it does
 not hold. For credential types that are not state matters, swiyu has no way to
 express that a sector body governs them.
