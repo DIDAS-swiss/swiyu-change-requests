@@ -49,7 +49,7 @@ the federal authorities.
 Facts, with sources listed below:
 
 - Trust Protocol 2.0 lets a credential type be declared protected. An issuer of
-  a protected type must hold an authorisation statement, and both the list of
+  a protected type must hold an authorisation statement and both the list of
   protected types and the authorisations are issued by the trust statement
   issuer named in the Swiss Profile Trust
   ([Trust Protocol, L67-L73][tp-protected], [L706-L741][tp-piats]). The
@@ -66,7 +66,7 @@ Facts, with sources listed below:
   protected at all ([L67-L73][tp-protected]).
 
 Assessment: whether a health professional may practise is decided by cantonal
-authorities, and the health trust flow F-01 expects authorisations to be
+authorities and the health trust flow F-01 expects authorisations to be
 checked against such registers. In swiyu, the federal operator would have to issue and
 withdraw these authorisations on their behalf, relying on information it does
 not hold. For credential types that are not state matters, swiyu has no way to
@@ -103,7 +103,7 @@ that are not state matters can also be placed under a sector body.
 Assessment, for the swiyu team to decide:
 
 - Trust framework and governance: which bodies may take the role, on what
-  basis, and how disputes and appeals are handled.
+  basis and how disputes and appeals are handled.
 - Specifications: Trust Protocol and Swiss Profile Trust.
 - Infrastructure and reference components: trust registry, wallet, generic
   verifier. Both the wallet and the verifier currently pin a single signer.
