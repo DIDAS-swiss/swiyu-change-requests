@@ -9,8 +9,8 @@ components of swiyu are maintained by the Federal Administration in
 [swiyu-admin-ch](https://github.com/swiyu-admin-ch).
 
 A change request is the input to a pipeline. It describes the obstacle, the
-actors affected and the outcome they need. It does not prescribe a technical
-solution: the swiyu team decides whether a specification, a component, the
+actors affected and the outcome they need, and stays at a high level. It
+typically does not prescribe a technical solution: the swiyu team decides whether a specification, a component, the
 infrastructure, an ordinance or a later revision of the law is the right place
 to respond. Each change request is assigned to one or more [aspects](ASPECTS.md),
 for example costs for actors, constraints of use, technological or

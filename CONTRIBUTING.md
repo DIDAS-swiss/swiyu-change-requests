@@ -12,9 +12,9 @@ decisions and escalation are set out in [GOVERNANCE.md](GOVERNANCE.md).
 A change request names an obstacle that keeps actors from using swiyu, shows
 who runs into it and states what should become possible. It is the input to a
 pipeline: DIDAS consults and endorses it, submits it to the swiyu team, and the
-swiyu team decides how to respond. A change request does not propose code,
-data formats or API changes. Each one is assigned to the [aspects](ASPECTS.md)
-it concerns.
+swiyu team decides how to respond. A change request stays at a high level and
+typically does not propose code, data formats or API changes. Each one is
+assigned to the [aspects](ASPECTS.md) it concerns.
 
 A good change request:
 

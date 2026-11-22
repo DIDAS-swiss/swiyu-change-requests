@@ -7,8 +7,8 @@ that keeps actors from using swiyu, shows who runs into it and what should
 become possible. How swiyu removes the obstacle is for the swiyu team to decide:
 in a specification, a reference component, the infrastructure, its operation,
 an ordinance or a later revision of the law. A change request therefore stays
-at the level of the need and the expected result. It does not propose code,
-data formats or API changes.
+at the level of the need and the expected result. It typically does not
+propose code, data formats or API changes.
 
 Each change request names one primary aspect and any secondary ones. The
 aspects sort the requests for the consultation, show the swiyu team which kind
