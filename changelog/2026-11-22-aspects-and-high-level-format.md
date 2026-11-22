@@ -1,7 +1,7 @@
 # 2026-11-22: Aspects and high-level format
 
 - Change requests are inputs to a pipeline. They describe the obstacle, the
-  actors affected and the requested outcome, and leave the solution to the
+  actors affected and the requested outcome and leave the solution to the
   swiyu team. The template is reduced accordingly.
 - `ASPECTS.md` proposes eleven aspects for sorting change requests: costs for
   actors, constraints of use, technological hurdles, organisational hurdles,

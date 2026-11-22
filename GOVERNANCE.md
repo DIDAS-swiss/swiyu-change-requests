@@ -2,7 +2,7 @@
 
 Status: proposal. The process, the governance, the aspects and the templates
 in this repository are a DIDAS proposal for discussion with the stewards,
-working groups and councils, and with the swiyu ecosystem governance.
+working groups and councils and with the swiyu ecosystem governance.
 
 This document sets out how change requests for swiyu are raised, consulted,
 endorsed and submitted. DIDAS submits every change request on behalf of its
@@ -12,7 +12,7 @@ request through these steps.
 
 It follows the intake model of the
 [DIDAS Glossary](https://github.com/DIDAS-swiss/didas-glossary/blob/main/GOVERNANCE.md)
-and the [DIDAS Use Case Repository](https://github.com/DIDAS-swiss/use-case-repository/blob/main/GOVERNANCE.md),
+and the [DIDAS Use Case Repository](https://github.com/DIDAS-swiss/use-case-repository/blob/main/GOVERNANCE.md)
 and maps onto the swiyu ecosystem governance below.
 
 ## Ecosystem governance
@@ -22,7 +22,7 @@ has three levels:
 
 | Level | Who | In relation to change requests |
 | --- | --- | --- |
-| **Steering Circle** | Public sector (BJ, Fachbereich e-ID; fedpol; …), the swiyu orchestrators (DVS, DIDAS), swiyu ambassadors (digitalswitzerland; …), and AN3 ecosystem stewards and councils | Receives reporting, needs and strategic questions from the orchestrators. Gives sponsoring and resources, goals, advice and priorities, and handles conflict management. |
+| **Steering Circle** | Public sector (BJ, Fachbereich e-ID; fedpol; …), the swiyu orchestrators (DVS, DIDAS), swiyu ambassadors (digitalswitzerland; …) and AN3 ecosystem stewards and councils | Receives reporting, needs and strategic questions from the orchestrators. Gives sponsoring and resources, goals, advice and priorities and handles conflict management. |
 | **swiyu Orchestrators** | Digitale Verwaltung Schweiz (DVS) and DIDAS | Collect industry and domain knowledge, pain points, use cases and needs from the sectors. Give advice, technical support, methodology, tools and network back. DIDAS runs this repository as its orchestrator methodology for change requests. |
 | **Sectoral councils and working groups** | Education, Banking, eCommerce & Retail, Health, … | Bring industry and domain knowledge, pain points, use cases, needs and questions. DIDAS members contribute through them. |
 
@@ -42,7 +42,7 @@ has three levels:
 ```
 
 Change requests move up this structure. They start in a sector, are consulted
-and endorsed there, and DIDAS submits them to the swiyu team and reports them to
+and endorsed there and DIDAS submits them to the swiyu team and reports them to
 the Steering Circle. What a change request contains is set out in
 [ASPECTS.md](ASPECTS.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -75,8 +75,8 @@ the Steering Circle. What a change request contains is set out in
 | **Author** | Raises the issue and writes the change request, on behalf of an identified organisation where possible. | DIDAS member |
 | **Sectoral working group** | Consulted on every change request that affects its sector. States a position on the record: support, support with changes, object, abstain. The groups are listed in the [Use Case Repository](https://github.com/DIDAS-swiss/use-case-repository/blob/main/_data/working-groups.csv). | Sectoral working group |
 | **Sectoral council** | Endorses, returns or rejects a change request for its sector. | Sectoral council |
-| **Steward** | Named per change request in [STEWARDS.md](STEWARDS.md) and the change request. Owns it through its lifecycle: checks scope and quality, verifies the spec references, picks the sectors to consult, runs the consultation, summarises the input, brings it to the council(s), and is the contact for the swiyu team. | Ecosystem steward |
-| **Orchestrator (DIDAS)** | Consolidates the positions of several sectors on a cross-sector change request, submits endorsed change requests to the swiyu team, reports to the Steering Circle, and coordinates with DVS where the public sector is affected. | swiyu Orchestrator |
+| **Steward** | Named per change request in [STEWARDS.md](STEWARDS.md) and the change request. Owns it through its lifecycle: checks scope and quality, verifies the spec references, picks the sectors to consult, runs the consultation, summarises the input, brings it to the council(s) and is the contact for the swiyu team. | Ecosystem steward |
+| **Orchestrator (DIDAS)** | Consolidates the positions of several sectors on a cross-sector change request, submits endorsed change requests to the swiyu team, reports to the Steering Circle and coordinates with DVS where the public sector is affected. | swiyu Orchestrator |
 | **Steering Circle** | Decides on escalations: conflicts between sectors, strategic questions and priorities. | Steering Circle |
 | **Maintainers** | Repository administration, labels, index, changelog, site. Merge once the gates are met. | none |
 
@@ -115,7 +115,7 @@ status becomes *Withdrawn* with the reason.
   strategic question for the ecosystem, the orchestrator brings it to the
   **Steering Circle**, whose decision is recorded in the change request.
 - **No council yet**: where a sector has no council, its working group's
-  position stands in, and the orchestrator records that it did.
+  position stands in and the orchestrator records that it did.
 
 ## Early notice
 

@@ -2,7 +2,7 @@
 
 - **Governance** follows the current working draft of the swiyu ecosystem
   governance: sectoral working groups are consulted, sectoral councils endorse,
-  DIDAS submits as swiyu orchestrator, and the Steering Circle decides on
+  DIDAS submits as swiyu orchestrator and the Steering Circle decides on
   escalations. Stewards and councils are listed in `STEWARDS.md`.
 - **Spec verification**: every claim about swiyu must be verified against the
   current specifications in swiyu-admin-ch and referenced with commit-pinned

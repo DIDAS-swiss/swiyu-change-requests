@@ -13,22 +13,22 @@ propose code, data formats or API changes.
 
 Each change request names one primary aspect and any secondary ones. The
 aspects sort the requests for the consultation, show the swiyu team which kind
-of change is asked for, and let DIDAS report to the Steering Circle where the
+of change is asked for and let DIDAS report to the Steering Circle where the
 obstacles concentrate.
 
 ## The aspects
 
 | Aspect | Label | Covers | Typical question |
 | --- | --- | --- | --- |
-| Costs for actors | `aspect: costs` | Fees, integration and operating effort, effort caused by manual processes, duplicated effort across actors | Which actor pays or works for what, and does that keep actors out? |
+| Costs for actors | `aspect: costs` | Fees, integration and operating effort, effort caused by manual processes, duplicated effort across actors | Which actor pays or works for what and does that keep actors out? |
 | Constraints of use | `aspect: constraints` | Rules and technical limits on how swiyu may be used: who may take part, which environments, credential types, identifiers, algorithms or interactions are allowed | Which legitimate use case is excluded by a rule or limit? |
 | Technological hurdles | `aspect: tech-hurdles` | Implementation is hard or impossible for some actors: missing libraries or platforms, complexity, dependencies on specific components | What blocks an actor from building on swiyu with reasonable effort? |
 | Organisational hurdles | `aspect: org-hurdles` | Onboarding, manual verification, lead times, support, missing contact points, unclear responsibilities | Which process step stops or delays actors? |
-| Governance and trust framework | `aspect: governance` | Who decides about participation, roles, authorisations and withdrawal; how sectors take part in these decisions | Who is responsible for a decision, and can that body take it within swiyu? |
+| Governance and trust framework | `aspect: governance` | Who decides about participation, roles, authorisations and withdrawal; how sectors take part in these decisions | Who is responsible for a decision and can that body take it within swiyu? |
 | Technological improvements | `aspect: tech-improvement` | Capabilities swiyu lacks that the ecosystem needs, such as new interaction patterns or credential features | What can actors not do today that they need for a use case? |
 | Defects | `aspect: defects` | Errors and contradictions in specifications or reference components that affect several actors | Which defect makes implementations diverge or fail? |
 | Infrastructure | `aspect: infrastructure` | Base registry, trust registry, status lists, environments, availability, operation | Which property of the infrastructure limits use, scale or reliability? |
-| Law and ordinances | `aspect: law` | Provisions in the E-ID Act (BGEID) and its ordinances that constrain the ecosystem, collected for later revisions | Which legal provision stands in the way, and is that intended? |
+| Law and ordinances | `aspect: law` | Provisions in the E-ID Act (BGEID) and its ordinances that constrain the ecosystem, collected for later revisions | Which legal provision stands in the way and is that intended? |
 | Interoperability | `aspect: interoperability` | Alignment with international standards and other ecosystems, in particular the EU Digital Identity framework | Where does swiyu diverge in a way that blocks cross-border or cross-ecosystem use? |
 | Documentation | `aspect: documentation` | Gaps, ambiguities and contradictions in the swiyu documentation | Where can actors not tell from the documentation how swiyu behaves? |
 
@@ -49,7 +49,7 @@ responsible disclosure process.
 ## Open points for the consultation
 
 - Whether the list is complete. Candidates that are not listed: privacy and
-  data minimisation, accessibility for holders, and market concentration
+  data minimisation, accessibility for holders and market concentration
   around single wallets or vendors. They may fit under existing aspects or
   need their own.
 - Whether `law` should collect provisions continuously, independent of

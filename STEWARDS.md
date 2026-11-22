@@ -1,6 +1,6 @@
 # Stewards and councils
 
-Who stewards change requests, and which sectoral councils endorse them (see
+Who stewards change requests and which sectoral councils endorse them (see
 [GOVERNANCE.md](GOVERNANCE.md#roles)). Where no steward is listed, DIDAS as
 swiyu orchestrator holds provisional stewardship. Where a sector has no council
 yet, its working group's position stands in.

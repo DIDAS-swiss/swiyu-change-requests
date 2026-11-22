@@ -37,7 +37,7 @@ Filled in by the steward, see [GOVERNANCE.md](../GOVERNANCE.md).
 
 ## Summary
 
-Two to four sentences: the obstacle, who it affects, and what should become
+Two to four sentences: the obstacle, who it affects and what should become
 possible.
 
 ## Problem

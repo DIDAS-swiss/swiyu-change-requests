@@ -21,7 +21,7 @@ body:
         - "Constraints of use: a rule or limit excludes a legitimate use"
         - "Technological hurdles: implementation is hard or impossible for some actors"
         - "Organisational hurdles: onboarding, manual steps, lead times, responsibilities"
-        - "Governance and trust framework: who decides, and whether that body can act within swiyu"
+        - "Governance and trust framework: who decides and whether that body can act within swiyu"
         - "Technological improvements: a capability the ecosystem needs is missing"
         - "Defects: errors or contradictions that affect several actors"
         - "Infrastructure: registries, status lists, environments, availability, operation"
@@ -75,14 +75,14 @@ body:
     id: impact
     attributes:
       label: Who is affected
-      description: Which actors, and how? Effort, cost, delay, excluded use cases.
+      description: Which actors and how? Effort, cost, delay, excluded use cases.
     validations:
       required: true
   - type: textarea
     id: outcome
     attributes:
       label: Requested outcome
-      description: What should become possible, and for whom? The result, not the technical solution.
+      description: What should become possible and for whom? The result, not the technical solution.
     validations:
       required: true
   - type: dropdown
