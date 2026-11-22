@@ -12,4 +12,5 @@
   and feasibility concern forms. New labels `aspect: <id>`.
 - README, contributing guide and governance rewritten in plainer language.
 - The README, governance and contributing guide state that the whole concept
-  is a proposal for discussion.
+  is a proposal for discussion; the website shows this in the footer of every
+  page.
