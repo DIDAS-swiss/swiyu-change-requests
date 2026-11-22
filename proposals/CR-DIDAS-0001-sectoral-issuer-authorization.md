@@ -68,8 +68,18 @@ Facts, with sources listed below:
 Assessment: where a cantonal or sectoral body decides whether an organisation
 may issue a credential type, the federal operator would have to issue and
 withdraw the authorisation in swiyu on that body's behalf, relying on
-information it does not hold. For credential types that are not state matters, swiyu has no way to
-express that a sector body governs them.
+information it does not hold. For credential types that are not state matters,
+swiyu has no way to express that a sector body governs them.
+
+Example: a student credential confirming enrolment at a higher education
+institution. Whether an organisation may issue it is a question for the
+education sector, for example for the body that recognises higher education
+institutions. Under the current specifications there are two options. Either
+the federal trust statement issuer declares the credential type protected and
+authorises each institution itself, or the type stays unprotected and any
+issuer can issue a credential of that type. The
+education sector has no way to decide within swiyu which institutions may
+issue it.
 
 ## Who is affected
 
