@@ -149,6 +149,10 @@ updated: 2026-11-22
 | `sector: <id>` | Affected sector, one per DIDAS working group |
 | `status: discussion`, `status: draft`, `status: consultation`, `status: council`, `status: endorsed`, `status: early-notice`, `status: submitted`, `status: closed-upstream` | Position in the workflow |
 
+The workflow *Sync labels* (`.github/workflows/sync-labels.yml`) creates and
+updates these labels. It runs when the workflow file changes on `main` and can
+be started from the Actions tab. Change the list there.
+
 ## Changelog
 
 Every pull request that changes a rule, adds a change request or changes its

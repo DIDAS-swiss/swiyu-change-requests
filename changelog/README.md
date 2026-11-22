@@ -3,6 +3,7 @@
 One file per change, named `YYYY-MM-DD-short-title.md`, added in the same pull
 request as the change. Newest first:
 
+- [2026-11-22: Label sync](2026-11-22-sync-labels.md)
 - [2026-11-22: Merge is publication](2026-11-22-merge-is-publication.md)
 - [2026-11-22: CR-DIDAS-0001](2026-11-22-cr-didas-0001.md)
 - [2026-11-22: Aspects and high-level format](2026-11-22-aspects-and-high-level-format.md)

@@ -1,0 +1,72 @@
+# Creates or updates the labels listed in CONTRIBUTING.md and ASPECTS.md.
+# Runs when this file changes on main and can be started from the Actions tab.
+name: Sync labels
+
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/sync-labels.yml"]
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v8
+        with:
+          script: |
+            const labels = [
+              ['change-request', '1971c2', 'Change request'],
+              ['needs-steward', 'fd7e14', 'No steward assigned yet'],
+              ['cross-sector', 'fab005', 'Affects more than one sector'],
+              ['escalated', 'e03131', 'Brought to the Steering Circle'],
+
+              ['aspect: costs', '5f3dc4', 'Costs for actors'],
+              ['aspect: constraints', '5f3dc4', 'Constraints of use'],
+              ['aspect: tech-hurdles', '5f3dc4', 'Technological hurdles'],
+              ['aspect: org-hurdles', '5f3dc4', 'Organisational hurdles'],
+              ['aspect: governance', '5f3dc4', 'Governance and trust framework'],
+              ['aspect: tech-improvement', '5f3dc4', 'Technological improvements'],
+              ['aspect: defects', '5f3dc4', 'Defects'],
+              ['aspect: infrastructure', '5f3dc4', 'Infrastructure'],
+              ['aspect: law', '5f3dc4', 'Law and ordinances'],
+              ['aspect: interoperability', '5f3dc4', 'Interoperability'],
+              ['aspect: documentation', '5f3dc4', 'Documentation'],
+
+              ['status: discussion', 'e9ecef', 'Being discussed, no change request file yet'],
+              ['status: draft', 'd0ebff', 'Published as a draft'],
+              ['status: consultation', '74c0fc', 'Open for working group and community input'],
+              ['status: council', 'fcc419', 'Awaiting council decision'],
+              ['status: endorsed', '40c057', 'Endorsed by DIDAS'],
+              ['status: early-notice', 'ffa94d', 'Early notice to swiyu authorised'],
+              ['status: submitted', '2b8a3e', 'Submitted to the swiyu team'],
+              ['status: closed-upstream', '868e96', 'The swiyu team has responded'],
+
+              ['sector: banking', 'c5f6fa', 'Sector: Banking'],
+              ['sector: insurance', 'c5f6fa', 'Sector: Insurance'],
+              ['sector: health', 'c5f6fa', 'Sector: Health'],
+              ['sector: pharma', 'c5f6fa', 'Sector: Pharma'],
+              ['sector: public-sector', 'c5f6fa', 'Sector: Public Sector'],
+              ['sector: education', 'c5f6fa', 'Sector: Education'],
+              ['sector: retail', 'c5f6fa', 'Sector: Retail (eCommerce & Retail)'],
+              ['sector: mobility', 'c5f6fa', 'Sector: Mobility'],
+              ['sector: hospitality', 'c5f6fa', 'Sector: Hospitality'],
+              ['sector: industry', 'c5f6fa', 'Sector: Industry & Manufacturing'],
+              ['sector: digital', 'c5f6fa', 'Sector: Digital & Telecom'],
+              ['sector: energy', 'c5f6fa', 'Sector: Energy & Utilities'],
+              ['sector: real-estate', 'c5f6fa', 'Sector: Real Estate'],
+              ['sector: sport', 'c5f6fa', 'Sector: Sport'],
+            ];
+            for (const [name, color, description] of labels) {
+              try {
+                await github.rest.issues.updateLabel({ ...context.repo, name, color, description });
+                core.info(`updated ${name}`);
+              } catch (e) {
+                if (e.status !== 404) throw e;
+                await github.rest.issues.createLabel({ ...context.repo, name, color, description });
+                core.info(`created ${name}`);
+              }
+            }
