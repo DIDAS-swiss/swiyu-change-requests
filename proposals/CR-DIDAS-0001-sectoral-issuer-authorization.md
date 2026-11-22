@@ -77,7 +77,7 @@ issue it for a credential type that is not a state matter.
 Example: a student credential confirming enrolment at a higher education
 institution. Whether an organisation may issue it is a question for the
 education sector, for example for bodies such as swissuniversities or educa.
-Whether these bodies would take such a role has not been discussed with them.
+Whether these bodies would take such a role is open.
 Under the current specifications there are two options. Either
 the federal trust statement issuer declares the credential type protected and
 authorises each institution itself, or the type stays unprotected and any
