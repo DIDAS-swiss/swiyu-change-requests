@@ -48,8 +48,11 @@ the Steering Circle. What a change request contains is set out in
 
 ## Principles
 
-1. **Issues are intake, the pull request is the governance artifact, merge to
-   `main` is endorsement.** Every decision is recorded in issue and PR history.
+1. **Issues are intake, pull requests record decisions, merge to `main` is
+   publication.** A change request is published with the status *Draft*. Its
+   status shows how far it has progressed; only the status *Endorsed* means
+   that DIDAS stands behind it. Every decision is recorded in issue and pull
+   request history.
 2. **The sectors decide.** A change request is endorsed by the councils of the
    sectors it affects, after their working groups were consulted.
 3. **Need, not solution.** A change request describes the obstacle and the
@@ -78,7 +81,7 @@ the Steering Circle. What a change request contains is set out in
 | **Steward** | Named per change request in [STEWARDS.md](STEWARDS.md) and the change request. Owns it through its lifecycle: checks scope and quality, verifies the spec references, picks the sectors to consult, runs the consultation, summarises the input, brings it to the council(s) and is the contact for the swiyu team. | Ecosystem steward |
 | **Orchestrator (DIDAS)** | Consolidates the positions of several sectors on a cross-sector change request, submits endorsed change requests to the swiyu team, reports to the Steering Circle and coordinates with DVS where the public sector is affected. | swiyu Orchestrator |
 | **Steering Circle** | Decides on escalations: conflicts between sectors, strategic questions and priorities. | Steering Circle |
-| **Maintainers** | Repository administration, labels, index, changelog, site. Merge once the gates are met. | none |
+| **Maintainers** | Repository administration, labels, index, changelog, site. Merge a new change request once the steward has confirmed it. Merge a status change once its gate is met. | none |
 
 A person can hold more than one role, but the **steward should not be the sole
 author** of the change request they steward.
@@ -94,9 +97,12 @@ author** of the change request they steward.
                                             the orchestrator   Circle
 ```
 
+Each transition after *Draft* is a pull request that changes the status of the
+change request and is merged once the condition is met.
+
 | Gate | Condition to pass | Recorded in |
 | --- | --- | --- |
-| Discussion → Draft | A steward is assigned and agrees the topic is in scope; the affected sectors are named. | Issue (assignee, `sector:` labels, `status: draft`) |
+| Discussion → Draft | A steward is assigned and agrees the topic is in scope; the affected sectors are named. The change request is merged and published with the status *Draft*. | Issue (assignee, `sector:` labels, `status: draft`), change request |
 | Draft → Consultation | Every claim is verified against the current swiyu spec and referenced (*Sources*); the steward names the working group(s) to consult. | Change request *Governance* and *Sources* tables |
 | Consultation → Council decision | At least **14 days** have passed; every consulted working group has stated a position; the steward has summarised the input, including dissent. | Change request *Community input* section |
 | Council decision → Submitted | The sectoral council(s) concerned have **endorsed** it (cross-sector: see below); the steward has re-verified the *Sources* against the latest spec. | Change request *Governance* table (date, decision, link to minutes) |
