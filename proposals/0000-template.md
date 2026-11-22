@@ -2,6 +2,7 @@
 title: "CR-DIDAS-NNNN: Title"
 cr: CR-DIDAS-NNNN
 status: Draft
+aspects: []
 sectors: []
 steward: TBD
 updated: YYYY-MM-DD
@@ -11,111 +12,85 @@ updated: YYYY-MM-DD
 
 | Field | Value |
 | --- | --- |
-| Authors | Name (Organisation), Name (Organisation) |
+| Authors | Name (Organisation) |
 | Created | YYYY-MM-DD |
-| Area | e.g. issuance / verification / wallet / trust / identifiers / status / credential-format / security |
-| Sectors affected | e.g. health, education (ids of the DIDAS working groups) |
-| Affected swiyu artefacts | Commit-pinned links to spec sections, repositories, APIs |
-| Discussion | Link to the issue in this repository |
-| Upstream | Link to the swiyu issue or discussion once submitted |
+| Primary aspect | One of the [aspects](../ASPECTS.md) |
+| Secondary aspects | Optional |
+| Sectors affected | Ids of the DIDAS working groups, or cross-sector |
+| Discussion | Link to the issue |
+| Upstream | Link to the submission to swiyu, once submitted |
 
 ## Governance
 
-See [GOVERNANCE.md](../GOVERNANCE.md). Filled in by the steward.
+Filled in by the steward, see [GOVERNANCE.md](../GOVERNANCE.md).
 
 | Item | Value |
 | --- | --- |
-| Steward | Name |
-| Working group(s) consulted | Name(s) |
-| Consultation period | YYYY-MM-DD to YYYY-MM-DD |
-| Council(s) | Name(s), or "no council yet: working group position stands in" |
-| Council decision(s) | pending / endorsed / returned / rejected, YYYY-MM-DD (link to minutes) |
-| Cross-sector consolidation | n/a, or: consolidated by DIDAS as orchestrator on YYYY-MM-DD |
-| Steering Circle | n/a, or: escalated on YYYY-MM-DD, decision (link) |
-| Early notice | n/a, or: authorised by … on YYYY-MM-DD, sent YYYY-MM-DD (link) |
+| Steward | |
+| Working groups consulted | |
+| Consultation period | |
+| Councils | |
+| Council decisions | |
+| Cross-sector consolidation | |
+| Steering Circle | |
+| Early notice | |
 
 ## Summary
 
-One paragraph: what should change and why.
+Two to four sentences: the obstacle, who it affects and what should become
+possible.
 
 ## Problem
 
-Describe the current situation and why it is a problem. Every claim links to
-the spec or code with a commit-pinned permalink.
+What actors run into today. State facts about swiyu with a reference to the
+specification or code (see [Sources](#sources)). Mark assessments and
+assumptions as such.
 
-## Ecosystem impact
+## Who is affected
 
-Who is affected and how? Tick all that apply and explain.
+The actors concerned and how: issuers, verifiers, wallet providers, holders,
+integrators, governing authorities, infrastructure operators.
 
-- [ ] Issuers
-- [ ] Verifiers / relying parties
-- [ ] Wallet providers
-- [ ] Holders (end users)
-- [ ] Integrators / solution vendors
-- [ ] Governing authorities (federal, cantonal, sectoral)
-- [ ] Trust infrastructure operators
+## Evidence
 
-Include cost, effort, timeline or interoperability consequences where known.
+Use cases, trust flows and implementation experience that show the problem.
 
-## Evidence from use cases and trust flows
-
-The use cases, trust flows and terms that run into this problem.
-
-| Kind | Link | How it is affected |
+| Kind | Link | What it shows |
 | --- | --- | --- |
-| Use case | [Use Case Repository](https://didas-swiss.github.io/use-case-repository/) entry | |
-| Trust flow | [Trust Flow Diagram Repository](https://github.com/DIDAS-swiss/Trust-Flow-Diagram-Repository) flow | |
-| Term | [DIDAS Glossary](https://didas-swiss.github.io/didas-glossary/) term | |
+| | | |
 
-## Proposed change
+## Requested outcome
 
-Describe the change precisely. Where possible, give proposed text or an API
-diff.
+What should become possible for which actors. Describe the result, not the
+technical solution.
 
-## Alternatives considered
+## Where the change may land
 
-Other options and why they were not chosen, including "do nothing".
+Assessment of which swiyu instruments the request concerns: trust framework,
+specification, reference components, infrastructure and operation, ordinance,
+law. The swiyu team decides.
 
-## Drawbacks and risks
+## Trade-offs and open questions
 
-Security, privacy, compatibility, migration or operational concerns.
-
-## Alignment with standards
-
-Relation to relevant standards and profiles (e.g. OpenID4VC, SD-JWT VC,
-HAIP, OpenID Federation, eIDAS 2.0 / EUDI ARF, ETSI, W3C, IETF), and to other
-ecosystems.
-
-## Migration and backwards compatibility
-
-How existing deployments would transition.
+Known conflicts of goals, risks and questions the consultation should answer.
 
 ## Sources
 
-Every claim above is verified against these sources (see
-[CONTRIBUTING.md](../CONTRIBUTING.md#verifying-and-referencing-the-spec)).
+Every statement about swiyu is checked against these sources, see
+[CONTRIBUTING.md](../CONTRIBUTING.md#verifying-and-referencing-the-spec).
 
-| Document / component | Version and status (as stated) | Commit checked | Date checked |
+| Document or component | Version and status as stated | Commit checked | Date checked |
 | --- | --- | --- | --- |
-| e.g. [Trust Protocol](https://github.com/swiyu-admin-ch/swiyu-admin-ch.github.io/blob/<sha>/_specifications/trust-protocol-v2-0.md) | 2.0, draft, last edited YYYY-MM-DD | `<sha>` | YYYY-MM-DD |
-
-Discrepancies found between spec and implementation, or within the swiyu
-documentation:
-
-- n/a
-
-## Open questions
-
-- …
+| | | | |
 
 ## Community input
 
-Filled in by the steward at the end of consultation.
+Filled in by the steward at the end of the consultation.
 
-| Working group / council / participant | Position | Main points |
+| Working group, council or participant | Position | Main points |
 | --- | --- | --- |
-| | support / support with changes / object / abstain | |
+| | | |
 
 ## Outcome
 
-To be filled in after the swiyu team responds.
+Filled in after the swiyu team has responded.

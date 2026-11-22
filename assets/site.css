@@ -244,3 +244,4 @@ a { color: var(--accent); }
 .status-endorsed, .status-submitted { background: var(--info-bg); color: var(--info-ink); }
 .status-accepted, .status-implemented { background: var(--ok-bg); color: var(--ok-ink); }
 .status-declined { background: var(--gap-bg); color: var(--gap-ink); }
+.site-footer .status-note { margin: 0 0 8px; }

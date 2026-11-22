@@ -1,7 +1,7 @@
 # GitHub Pages builds this site from the Markdown in the repository with its
 # built-in Jekyll, like the DIDAS Use Case Repository; there is no separate
 # build step. README.md becomes each folder's index page, files without front
-# matter are still rendered, titles come from the first heading, and links to
+# matter are still rendered, titles come from the first heading and links to
 # .md files are rewritten to the rendered pages.
 title: DIDAS swiyu Change Requests
 description: >-
