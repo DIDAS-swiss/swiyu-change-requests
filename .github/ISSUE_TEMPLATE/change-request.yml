@@ -1,59 +1,90 @@
 name: Change request
-description: Propose a change to a swiyu specification, API or trust framework
+description: Raise an obstacle that keeps actors from using swiyu
 title: "[CR] "
 labels: ["change-request", "status: discussion", "needs-steward"]
 body:
   - type: markdown
     attributes:
       value: |
-        Use this to start the discussion on a change you would like the swiyu team to consider.
-        A steward is assigned to every change request. Before DIDAS sends anything to the swiyu team it is
-        consulted with the sectoral working groups and endorsed by the sectoral councils (see GOVERNANCE.md).
-        Please link the swiyu specification for every statement about how swiyu works.
+        Describe the obstacle and what should become possible. The swiyu team decides how to solve it, so a
+        technical solution is not needed. A steward is assigned; the working groups of the affected sectors are
+        consulted and their councils decide before DIDAS submits anything (see GOVERNANCE.md and ASPECTS.md).
+        Link the swiyu specification or code for every statement about how swiyu works.
         **Do not report security vulnerabilities here.**
   - type: dropdown
-    id: area
+    id: aspect
     attributes:
-      label: Area
-      multiple: true
+      label: Primary aspect
+      description: The kind of obstacle the requested outcome addresses. See ASPECTS.md.
       options:
-        - Issuance (OID4VCI, swiyu-issuer)
-        - Verification (OID4VP, swiyu-verifier)
-        - Wallet / holder experience
-        - Trust registry / trust statements / governance
-        - Identifiers (DIDs, DID resolution)
-        - Status lists / revocation
-        - Credential format (SD-JWT VC, OCA, schemas)
-        - Security (crypto, keys, attestation)
-        - Other
+        - "Costs for actors: fees, integration or operating effort"
+        - "Constraints of use: a rule or limit excludes a legitimate use"
+        - "Technological hurdles: implementation is hard or impossible for some actors"
+        - "Organisational hurdles: onboarding, manual steps, lead times, responsibilities"
+        - "Governance and trust framework: who decides, and whether that body can act within swiyu"
+        - "Technological improvements: a capability the ecosystem needs is missing"
+        - "Defects: errors or contradictions that affect several actors"
+        - "Infrastructure: registries, status lists, environments, availability, operation"
+        - "Law and ordinances: a provision of the E-ID Act or its ordinances, for later revisions"
+        - "Interoperability: divergence from international standards or other ecosystems"
+        - "Documentation: gaps or contradictions in the swiyu documentation"
     validations:
       required: true
+  - type: dropdown
+    id: secondary-aspects
+    attributes:
+      label: Secondary aspects
+      multiple: true
+      options:
+        - Costs for actors
+        - Constraints of use
+        - Technological hurdles
+        - Organisational hurdles
+        - Governance and trust framework
+        - Technological improvements
+        - Defects
+        - Infrastructure
+        - Law and ordinances
+        - Interoperability
+        - Documentation
+  - type: dropdown
+    id: role
+    attributes:
+      label: Your role
+      multiple: true
+      options:
+        - Issuer
+        - Verifier / relying party
+        - Wallet provider
+        - Integrator / solution vendor
+        - Governing authority (federal, cantonal, sectoral)
+        - Infrastructure operator
+        - Other
   - type: textarea
     id: problem
     attributes:
       label: Problem
-      description: What is the current situation and why is it a problem? Link the exact spec section or code in github.com/swiyu-admin-ch for every statement about swiyu.
+      description: >-
+        What do actors run into today? Depending on the aspect: who pays or works for what; which use is excluded
+        and by which rule; what blocks an implementation; which process step delays; who should decide and cannot;
+        which capability is missing; which defect; which legal provision. Link the specification or code in
+        github.com/swiyu-admin-ch for every statement about swiyu.
     validations:
       required: true
   - type: textarea
     id: impact
     attributes:
-      label: Ecosystem impact
-      description: Who is affected (issuers, verifiers, wallets, holders, integrators) and how?
+      label: Who is affected
+      description: Which actors, and how? Effort, cost, delay, excluded use cases.
     validations:
       required: true
   - type: textarea
-    id: proposal
+    id: outcome
     attributes:
-      label: Proposed change
-      description: What should change? A first idea is fine.
+      label: Requested outcome
+      description: What should become possible, and for whom? The result, not the technical solution.
     validations:
       required: true
-  - type: textarea
-    id: references
-    attributes:
-      label: References
-      description: Standards, other ecosystems, implementation experience.
   - type: dropdown
     id: sectors
     attributes:
@@ -81,25 +112,25 @@ body:
   - type: textarea
     id: evidence
     attributes:
-      label: Use cases and trust flows
-      description: Links to entries in the DIDAS Use Case Repository or Trust Flow Diagram Repository that run into this problem.
+      label: Evidence
+      description: Use cases, trust flows or deployments that show the problem.
   - type: dropdown
     id: urgency
     attributes:
       label: Timing
-      description: Is there a swiyu deadline (spec freeze, release, consultation) that may require an early notice?
+      description: Is there a deadline (specification freeze, release, consultation, legislative process) that may require an early notice?
       options:
         - No known deadline
-        - Deadline known (describe in References)
+        - Deadline known (describe under Evidence)
   - type: textarea
     id: interests
     attributes:
       label: Disclosure of interests
-      description: Any commercial or organisational interest relevant to this topic.
+      description: Commercial or organisational interests relevant to this topic.
   - type: checkboxes
     id: coauthor
     attributes:
       label: Contribution
       options:
-        - label: I am willing to help write the proposal
+        - label: I am willing to help write the change request
         - label: I am willing to act as steward (if I am a DIDAS steward)

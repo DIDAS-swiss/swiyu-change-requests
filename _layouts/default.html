@@ -51,6 +51,7 @@
     <div class="inner">
       <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Overview</a>
       <a href="{{ '/proposals/' | relative_url }}"{% if page.kind == 'proposal' %} aria-current="page"{% endif %}>Change requests</a>
+      <a href="{{ '/ASPECTS.html' | relative_url }}"{% if page.url == '/ASPECTS.html' %} aria-current="page"{% endif %}>Aspects</a>
       <a href="{{ '/GOVERNANCE.html' | relative_url }}"{% if page.url == '/GOVERNANCE.html' %} aria-current="page"{% endif %}>Governance</a>
       <a href="{{ '/CONTRIBUTING.html' | relative_url }}"{% if page.url == '/CONTRIBUTING.html' %} aria-current="page"{% endif %}>Contributing</a>
       <a href="{{ '/STEWARDS.html' | relative_url }}"{% if page.url == '/STEWARDS.html' %} aria-current="page"{% endif %}>Stewards &amp; councils</a>
@@ -63,12 +64,11 @@
     {%- if page.url == '/' %}
     <section class="hero" aria-label="Get involved">
       <div>
-        <p class="hero-title">Something in swiyu blocking your sector?</p>
-        <p class="hero-text">Raise it as a change request. A steward guides it through consultation with the sectoral working groups and councils, every claim is verified against the swiyu specification, and DIDAS submits it to the swiyu team as swiyu orchestrator.</p>
+        <p class="hero-title">An obstacle keeps your organisation from using swiyu?</p>
+        <p class="hero-text">Describe it in the form: the obstacle, who it affects and what should become possible. A steward takes it through consultation with the sectoral working groups and councils, and DIDAS submits it to the swiyu team.</p>
       </div>
       <div class="hero-actions">
         <a class="button primary" href="https://github.com/{{ site.repository }}/issues/new?template=change-request.yml">+ Raise a change request</a>
-        <a class="button" href="https://github.com/{{ site.repository }}/issues/new?template=feasibility-concern.yml">Report a feasibility concern</a>
         <a class="button" href="{{ '/proposals/' | relative_url }}">See the change requests</a>
       </div>
     </section>
@@ -76,6 +76,7 @@
     {%- if page.cr -%}
     <dl class="facts">
       <div><dt>Change request</dt><dd>{{ page.cr }}</dd></div>
+      {%- if page.aspects and page.aspects.size > 0 %}<div class="wide"><dt>Aspects</dt><dd>{{ page.aspects | join: ', ' }}</dd></div>{% endif -%}
       <div><dt>Status</dt><dd><span class="pill status-{{ page.status | downcase | replace: ' ', '-' }}">{{ page.status }}</span></dd></div>
       {%- if page.sectors and page.sectors.size > 0 %}<div class="wide"><dt>Sectors</dt><dd>{{ page.sectors | join: ', ' }}</dd></div>{% endif -%}
       <div><dt>Steward</dt><dd>{{ page.steward | default: 'TBD' }}</dd></div>
@@ -93,7 +94,7 @@
   <footer class="site-footer">
     <div class="inner">
       Content <a href="https://github.com/{{ site.repository }}/blob/main/LICENSE">MIT</a>
-      · DIDAS — Digital Identity and Data Sovereignty Association, swiyu orchestrator
+      · DIDAS (Digital Identity and Data Sovereignty Association), swiyu orchestrator
       · Specifications: <a href="https://github.com/swiyu-admin-ch">swiyu-admin-ch</a>
       · Vocabulary: <a href="https://didas-swiss.github.io/didas-glossary/">DIDAS Glossary</a>
       · <a href="https://didas-swiss.github.io/use-case-repository/">Use cases</a>
