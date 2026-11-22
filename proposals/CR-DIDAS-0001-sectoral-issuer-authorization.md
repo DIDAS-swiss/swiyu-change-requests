@@ -1,5 +1,5 @@
 ---
-title: "CR-DIDAS-0001: Sectoral authorities cannot decide which issuers may issue their credential types"
+title: "CR-DIDAS-0001: Non-governmental sector bodies cannot decide which issuers may issue their credential types"
 cr: CR-DIDAS-0001
 status: Draft
 aspects: [governance, law, costs, infrastructure]
@@ -8,7 +8,7 @@ steward: TBD
 updated: 2026-11-22
 ---
 
-# CR-DIDAS-0001: Sectoral authorities cannot decide which issuers may issue their credential types
+# CR-DIDAS-0001: Non-governmental sector bodies cannot decide which issuers may issue their credential types
 
 | Field | Value |
 | --- | --- |
@@ -37,12 +37,12 @@ updated: 2026-11-22
 
 For credential types that only authorised issuers may issue, swiyu provides a
 single body that grants the authorisation: the federal trust statement issuer.
-Bodies responsible for a sector, such as cantonal authorities or industry
-schemes, cannot decide within swiyu
-which issuers are authorised for the credential types of their sector. We ask
-swiyu to give such bodies a defined role in the trust framework, so that they
-can grant and withdraw these authorisations themselves within a scope set by
-the federal authorities.
+Some credential types are governed outside government, by associations,
+self-regulatory organisations (SROs) or industry schemes that decide which
+organisations may issue them. These bodies cannot take that decision within
+swiyu. We ask swiyu to give non-governmental sector bodies a defined role in
+the trust framework, so that they can grant and withdraw these authorisations
+themselves within a scope set by the federal authorities.
 
 ## Problem
 
@@ -65,26 +65,29 @@ Facts, with sources listed below:
 - A credential type is either on the federal list of protected types or not
   protected at all ([L67-L73][tp-protected]).
 
-Assessment: where a cantonal or sectoral body decides whether an organisation
-may issue a credential type, the federal operator would have to issue and
-withdraw the authorisation in swiyu on that body's behalf, relying on
-information it does not hold. For credential types that are not state matters,
-swiyu has no way to express that a sector body governs them.
+Assessment: where an association or a self-regulatory organisation decides
+which organisations may issue a credential type, swiyu leaves it two options.
+It can ask the federal operator to declare the type protected and to issue and
+withdraw each authorisation on its behalf, relying on information the operator
+does not hold. Or the type stays unprotected and the body has no say within
+swiyu. Since the specification describes the authorisation as proof of state
+authorisation, it is open whether the federal trust statement issuer would
+issue it for a credential type that is not a state matter.
 
 Example: a student credential confirming enrolment at a higher education
 institution. Whether an organisation may issue it is a question for the
-education sector, for example for the body that recognises higher education
-institutions. Under the current specifications there are two options. Either
+education sector, for example for bodies such as swissuniversities or educa.
+Whether these bodies would take such a role has not been discussed with them.
+Under the current specifications there are two options. Either
 the federal trust statement issuer declares the credential type protected and
 authorises each institution itself, or the type stays unprotected and any
-issuer can issue a credential of that type. The
-education sector has no way to decide within swiyu which institutions may
-issue it.
+issuer can issue a credential of that type. The sector has no way to decide
+within swiyu which institutions may issue it.
 
 ## Who is affected
 
-Sectoral authorities and scheme operators cannot exercise their responsibility
-within swiyu. Issuers have no authorisation path through the body responsible
+Associations, self-regulatory organisations and scheme operators cannot
+exercise their responsibility within swiyu. Issuers have no authorisation path through the body responsible
 for them. Verifiers that need to know which issuers a sector recognises
 maintain their own lists of accepted issuers; the generic verifier provides a
 per-verification list for this purpose ([verifier][verifier-dto]). Holders cannot
@@ -98,11 +101,11 @@ are collected during the consultation.
 
 ## Requested outcome
 
-A body responsible for a sector can grant and withdraw the authorisation to
-issue the credential types of that sector within swiyu. The federal
-authorities define which bodies take this role and for which credential types.
-Wallets and verifiers can tell which body authorised an issuer. Credential types
-that are not state matters can also be placed under a sector body.
+A non-governmental sector body, such as an association or a self-regulatory
+organisation, can grant and withdraw the authorisation to issue the credential
+types it governs within swiyu. The federal authorities define which bodies take
+this role and for which credential types. Wallets and verifiers can tell which
+body authorised an issuer.
 
 ## Where the change may land
 
@@ -114,16 +117,18 @@ Assessment, for the swiyu team to decide:
 - Infrastructure and reference components: trust registry, wallet, generic
   verifier. Both the wallet and the verifier currently pin a single signer.
 - Ordinance or law: whether the E-ID Act and its ordinances allow the federal
-  authorities to delegate this role. This has not been checked.
+  authorities to delegate this role to private-law bodies. This has not been
+  checked.
 
 ## Trade-offs and open questions
 
 - A single federal signer is easier to operate and audit. More signing bodies
   increase the attack surface and the coordination effort.
-- Overlapping responsibilities between bodies, or between cantons, have to be
-  resolved before a credential type can be assigned to one body.
-- Open: whether private-law schemes can take the role or only public
-  authorities; whether the same applies to the authorisation to verify
+- Overlapping responsibilities, for example between competing associations in
+  one sector, have to be resolved before a credential type can be assigned to
+  one body.
+- Open: which non-governmental bodies qualify and on what basis, for example
+  their statutes or recognition by an authority; whether the same applies to the authorisation to verify
   protected data; how withdrawal reaches issuers and verifiers in time; which
   appeal path an issuer has when an authorisation is refused or withdrawn.
 
