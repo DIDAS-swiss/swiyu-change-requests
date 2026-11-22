@@ -153,6 +153,15 @@ The workflow *Sync labels* (`.github/workflows/sync-labels.yml`) creates and
 updates these labels. It runs when the workflow file changes on `main` and can
 be started from the Actions tab. Change the list there.
 
+## Automatic checks
+
+The workflow *Check* runs `scripts/check.py` on every pull request. It checks
+internal links, the changelog index and that every change request agrees with
+both indexes. It also checks that aspects, statuses, sectors and labels agree
+across this guide, `ASPECTS.md`, the intake form and the label workflow. It
+flags writing rules that can be checked mechanically, such as a comma before
+"and". Run it locally with `python3 scripts/check.py`.
+
 ## Changelog
 
 Every pull request that changes a rule, adds a change request or changes its

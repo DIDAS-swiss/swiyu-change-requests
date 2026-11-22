@@ -66,4 +66,4 @@ never posted here.
 
 ## Licence
 
-[MIT](LICENSE)
+[MIT](https://github.com/DIDAS-swiss/swiyu-change-requests/blob/main/LICENSE)

@@ -60,6 +60,16 @@ jobs:
               ['sector: real-estate', 'c5f6fa', 'Sector: Real Estate'],
               ['sector: sport', 'c5f6fa', 'Sector: Sport'],
             ];
+            // Labels used earlier and no longer part of the scheme.
+            const obsolete = ['area: trust'];
+            for (const name of obsolete) {
+              try {
+                await github.rest.issues.deleteLabel({ ...context.repo, name });
+                core.info(`deleted ${name}`);
+              } catch (e) {
+                if (e.status !== 404) throw e;
+              }
+            }
             for (const [name, color, description] of labels) {
               try {
                 await github.rest.issues.updateLabel({ ...context.repo, name, color, description });
