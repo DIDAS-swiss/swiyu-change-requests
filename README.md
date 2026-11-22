@@ -2,6 +2,10 @@
 
 **Website: <https://didas-swiss.github.io/swiyu-change-requests/>**
 
+Status: proposal. The process, the governance, the aspects and the templates
+in this repository are a DIDAS proposal for discussion with the stewards,
+working groups and councils, and with the swiyu ecosystem governance.
+
 DIDAS collects here the obstacles that keep actors from using swiyu, the Swiss
 e-ID trust infrastructure, and submits them to the swiyu team as change
 requests. DIDAS acts as swiyu orchestrator; the specifications and reference

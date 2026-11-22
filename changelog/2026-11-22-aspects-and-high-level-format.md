@@ -11,3 +11,5 @@
 - One intake form, organised by aspect, replaces the separate change request
   and feasibility concern forms. New labels `aspect: <id>`.
 - README, contributing guide and governance rewritten in plainer language.
+- The README, governance and contributing guide state that the whole concept
+  is a proposal for discussion.

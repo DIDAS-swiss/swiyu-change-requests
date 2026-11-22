@@ -1,6 +1,7 @@
 # Aspects of a change request
 
-Status: proposal for discussion with the stewards, working groups and councils.
+Status: proposal for discussion with the stewards, working groups and councils,
+as part of the overall proposal for this repository (see [README](README.md)).
 
 A DIDAS change request is the first step of a pipeline. It names an obstacle
 that keeps actors from using swiyu, shows who runs into it and what should

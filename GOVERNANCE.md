@@ -1,5 +1,9 @@
 # Governance
 
+Status: proposal. The process, the governance, the aspects and the templates
+in this repository are a DIDAS proposal for discussion with the stewards,
+working groups and councils, and with the swiyu ecosystem governance.
+
 This document sets out how change requests for swiyu are raised, consulted,
 endorsed and submitted. DIDAS submits every change request on behalf of its
 community. Before submission, the working groups of the affected sectors are

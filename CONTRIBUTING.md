@@ -4,6 +4,10 @@ title: Contributing
 
 # Contributing
 
+Status: proposal. The process, the governance, the aspects and the templates
+in this repository are a DIDAS proposal for discussion with the stewards,
+working groups and councils, and with the swiyu ecosystem governance.
+
 This guide describes how a change request is written and reviewed. Roles,
 decisions and escalation are set out in [GOVERNANCE.md](GOVERNANCE.md).
 
