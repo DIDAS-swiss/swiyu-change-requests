@@ -42,7 +42,11 @@ def slug(heading):
     return h.replace(" ", "-")
 
 
-files = subprocess.check_output(["git", "ls-files"], text=True).split()
+# Tracked files plus new files not yet added, so a local run sees what a pull
+# request will contain.
+files = subprocess.check_output(
+    ["git", "ls-files", "--cached", "--others", "--exclude-standard"], text=True
+).split()
 markdown = [f for f in files if f.endswith(".md")]
 anchors = {f: {slug(h) for h in re.findall(r"^#+\s+(.*)$", read(f), re.M)} for f in markdown}
 
