@@ -26,7 +26,7 @@ organisational hurdles, governance, defects, infrastructure or law.
 
 | CR | Title | Aspects | Sectors | Status |
 | --- | --- | --- | --- | --- |
-| [CR-DIDAS-0001](proposals/CR-DIDAS-0001-sectoral-issuer-authorization.md) | Sectoral authorities cannot decide which issuers may issue their credential types | governance, law, costs, infrastructure | cross-sector, health | Draft |
+| [CR-DIDAS-0001](proposals/CR-DIDAS-0001-sectoral-issuer-authorization.md) | Sectoral authorities cannot decide which issuers may issue their credential types | governance, law, costs, infrastructure | cross-sector | Draft |
 
 The [index](proposals/README.md) also lists stewards and upstream links.
 
