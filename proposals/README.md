@@ -6,4 +6,4 @@ All change requests, newest last. Statuses are explained in
 
 | CR | Title | Aspects | Sectors | Steward | Status | Upstream |
 | --- | --- | --- | --- | --- | --- | --- |
-| [CR-DIDAS-0001](CR-DIDAS-0001-sectoral-issuer-authorization.md) | Sectoral authorities cannot decide which issuers may issue their credential types | governance, law, costs, infrastructure | cross-sector | TBD | Draft | none |
+| [CR-DIDAS-0001](CR-DIDAS-0001-sectoral-issuer-authorization.md) | Non-governmental sector bodies cannot decide which issuers may issue their credential types | governance, law, costs, infrastructure | cross-sector | TBD | Draft | none |
