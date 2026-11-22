@@ -40,16 +40,23 @@ maintainer adds the `aspect:` and `sector:` labels and the label
 
 Once a steward is assigned, copy `proposals/0000-template.md` to
 `proposals/CR-DIDAS-NNNN-short-title.md` with the next free number, fill it in,
-add a row to `proposals/README.md` and a file in `changelog/` and open a draft
-pull request that references the issue.
+add a row to `proposals/README.md` and a file in `changelog/` and open a pull
+request that references the issue.
+
+When the steward confirms that the change request follows the template and that
+its statements about swiyu are checked and referenced, a maintainer merges it
+with the status *Draft*. Merging publishes the change request; it does not
+mean that DIDAS endorses it. Every later step is a pull request that changes
+the status, the *Governance* table, the index and the changelog.
 
 ### 3. Consultation
 
-The steward marks the pull request ready for review, labels it
+The steward sets the status to *In consultation*, labels the issue
 `status: consultation` and notifies the working groups of the affected sectors.
-The consultation lasts at least 14 days. Each consulted working group states
-its position: support, support with changes, object or abstain. The steward
-summarises the input, including dissent, under *Community input*.
+The consultation runs in the discussion issue and lasts at least 14 days. Each
+consulted working group states its position: support, support with changes,
+object or abstain. The steward summarises the input, including dissent, under
+*Community input*.
 
 ### 4. Council decision
 
@@ -58,8 +65,8 @@ and labels it `status: council`. For a change request that affects several
 sectors, DIDAS consolidates the positions as orchestrator and brings conflicts
 or strategic questions to the Steering Circle (see
 [GOVERNANCE.md](GOVERNANCE.md#single-sector-and-cross-sector-change-requests)).
-A maintainer merges the pull request after endorsement. Merged change requests
-have the status *Endorsed*.
+When the councils have decided, the steward records the decisions and sets the
+status to *Endorsed* or, after a rejection, to *Withdrawn*.
 
 ### 5. Submission and outcome
 
