@@ -42,7 +42,8 @@ self-regulatory organisations (SROs) or industry schemes that decide which
 organisations may issue them. These bodies cannot take that decision within
 swiyu. We ask swiyu to give non-governmental sector bodies a defined role in
 the trust framework, so that they can grant and withdraw these authorisations
-themselves within a scope set by the federal authorities.
+themselves. Who sets the scope of that role is a question for the
+consultation.
 
 ## Problem
 
@@ -103,9 +104,11 @@ are collected during the consultation.
 
 A non-governmental sector body, such as an association or a self-regulatory
 organisation, can grant and withdraw the authorisation to issue the credential
-types it governs within swiyu. The federal authorities define which bodies take
-this role and for which credential types. Wallets and verifiers can tell which
-body authorised an issuer.
+types it governs within swiyu.
+
+Who decides which bodies take this role and for which credential types is not
+yet clear and is part of the consultation. The same applies to how wallets and
+verifiers learn which body authorised an issuer.
 
 ## Where the change may land
 
@@ -116,9 +119,8 @@ Assessment, for the swiyu team to decide:
 - Specifications: Trust Protocol and Swiss Profile Trust.
 - Infrastructure and reference components: trust registry, wallet, generic
   verifier. Both the wallet and the verifier currently pin a single signer.
-- Ordinance or law: whether the E-ID Act and its ordinances allow the federal
-  authorities to delegate this role to private-law bodies. This has not been
-  checked.
+- Ordinance or law: whether the E-ID Act and its ordinances allow this role to
+  be given to private-law bodies. This has not been checked.
 
 ## Trade-offs and open questions
 
@@ -127,10 +129,19 @@ Assessment, for the swiyu team to decide:
 - Overlapping responsibilities, for example between competing associations in
   one sector, have to be resolved before a credential type can be assigned to
   one body.
-- Open: which non-governmental bodies qualify and on what basis, for example
-  their statutes or recognition by an authority; whether the same applies to the authorisation to verify
-  protected data; how withdrawal reaches issuers and verifiers in time; which
-  appeal path an issuer has when an authorisation is refused or withdrawn.
+
+Questions for the consultation:
+
+- Who decides which bodies take the role and for which credential types: the
+  federal authorities, a body of the ecosystem governance such as the Steering
+  Circle, or another body.
+- Which non-governmental bodies qualify and on what basis, for example their
+  statutes or recognition by an authority.
+- How wallets, verifiers and holders learn which body authorised an issuer.
+- Whether the same applies to the authorisation to verify protected data.
+- How a withdrawal reaches issuers and verifiers in time.
+- Which appeal path an issuer has when an authorisation is refused or
+  withdrawn.
 
 ## Sources
 
