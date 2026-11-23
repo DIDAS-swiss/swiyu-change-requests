@@ -3,6 +3,7 @@
 One file per change, named `YYYY-MM-DD-short-title.md`, added in the same pull
 request as the change. Newest first:
 
+- [2026-11-23: CR-DIDAS-0001 as a governance question](2026-11-23-cr-didas-0001-governance.md)
 - [2026-11-23: CR-DIDAS-0001 title](2026-11-23-cr-didas-0001-title.md)
 - [2026-11-22: Automatic checks](2026-11-22-checks.md)
 - [2026-11-22: CR-DIDAS-0001 focused on non-governmental bodies](2026-11-22-cr-didas-0001-non-governmental.md)
