@@ -5,9 +5,9 @@
 # .md files are rewritten to the rendered pages.
 title: DIDAS swiyu Change Requests
 description: >-
-  Change requests from the DIDAS community for the swiyu team to consider,
-  consulted with the sectoral working groups and councils and verified against
-  the swiyu specifications.
+  Change requests from the DIDAS community for the swiyu team to consider.
+  They are consulted with the sectoral working groups and councils. Statements
+  about swiyu are verified against the specifications.
 repository: DIDAS-swiss/swiyu-change-requests
 baseurl: /swiyu-change-requests
 url: https://didas-swiss.github.io

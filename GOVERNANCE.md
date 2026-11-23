@@ -2,7 +2,8 @@
 
 Status: proposal. The process, the governance, the aspects and the templates
 in this repository are a DIDAS proposal for discussion with the stewards,
-working groups and councils and with the swiyu ecosystem governance.
+working groups and councils. It is also put forward for discussion in the
+swiyu ecosystem governance.
 
 This document sets out how change requests for swiyu are raised, consulted,
 endorsed and submitted. DIDAS submits every change request on behalf of its
@@ -41,9 +42,9 @@ has three levels:
                 └────────────────────────────────────────────────────────────────────┘
 ```
 
-Change requests move up this structure. They start in a sector, are consulted
-and endorsed there and DIDAS submits them to the swiyu team and reports them to
-the Steering Circle. What a change request contains is set out in
+Change requests move up this structure. They start in a sector and are
+consulted and endorsed there. DIDAS submits them to the swiyu team and reports
+them to the Steering Circle. What a change request contains is set out in
 [ASPECTS.md](ASPECTS.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Principles

@@ -20,7 +20,7 @@ obstacles concentrate.
 
 | Aspect | Label | Covers | Typical question |
 | --- | --- | --- | --- |
-| Costs for actors | `aspect: costs` | Fees, integration and operating effort, effort caused by manual processes, duplicated effort across actors | Which actor pays or works for what and does that keep actors out? |
+| Costs for actors | `aspect: costs` | Fees, integration and operating effort, effort caused by manual processes, duplicated effort across actors | Which actor pays or works for what? Does that keep actors out? |
 | Constraints of use | `aspect: constraints` | Rules and technical limits on how swiyu may be used: who may take part, which environments, credential types, identifiers, algorithms or interactions are allowed | Which legitimate use case is excluded by a rule or limit? |
 | Technological hurdles | `aspect: tech-hurdles` | Implementation is hard or impossible for some actors: missing libraries or platforms, complexity, dependencies on specific components | What blocks an actor from building on swiyu with reasonable effort? |
 | Organisational hurdles | `aspect: org-hurdles` | Onboarding, manual verification, lead times, support, missing contact points, unclear responsibilities | Which process step stops or delays actors? |

@@ -4,19 +4,20 @@
 
 Status: proposal. The process, the governance, the aspects and the templates
 in this repository are a DIDAS proposal for discussion with the stewards,
-working groups and councils and with the swiyu ecosystem governance.
+working groups and councils. It is also put forward for discussion in the
+swiyu ecosystem governance.
 
 DIDAS collects here the obstacles that keep actors from using swiyu, the Swiss
-e-ID trust infrastructure and submits them to the swiyu team as change
+e-ID trust infrastructure. It submits them to the swiyu team as change
 requests. DIDAS acts as swiyu orchestrator; the specifications and reference
 components of swiyu are maintained by the Federal Administration in
 [swiyu-admin-ch](https://github.com/swiyu-admin-ch).
 
 A change request is the input to a pipeline. It describes the obstacle, the
-actors affected and the outcome they need and stays at a high level. It
-typically does not prescribe a technical solution: the swiyu team decides whether a specification, a component, the
-infrastructure, an ordinance or a later revision of the law is the right place
-to respond. Each change request is assigned to one or more [aspects](ASPECTS.md),
+actors affected and the outcome they need. It stays at a high level and
+typically does not prescribe a technical solution: the swiyu team decides
+whether a specification, a component, the infrastructure, an ordinance or a
+later revision of the law is the right place to respond. Each change request is assigned to one or more [aspects](ASPECTS.md),
 for example costs for actors, constraints of use, technological or
 organisational hurdles, governance, defects, infrastructure or law.
 
