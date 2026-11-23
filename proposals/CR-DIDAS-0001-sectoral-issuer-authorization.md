@@ -1,14 +1,14 @@
 ---
-title: "CR-DIDAS-0001: Non-governmental sector bodies cannot decide which issuers may issue their credential types"
+title: "CR-DIDAS-0001: Non-governmental sector bodies cannot technically ensure which issuers may issue their credential types"
 cr: CR-DIDAS-0001
 status: Draft
 aspects: [governance, law, costs, infrastructure]
 sectors: [cross-sector]
 steward: TBD
-updated: 2026-11-22
+updated: 2026-11-23
 ---
 
-# CR-DIDAS-0001: Non-governmental sector bodies cannot decide which issuers may issue their credential types
+# CR-DIDAS-0001: Non-governmental sector bodies cannot technically ensure which issuers may issue their credential types
 
 | Field | Value |
 | --- | --- |
@@ -39,8 +39,9 @@ For credential types that only authorised issuers may issue, swiyu provides a
 single body that grants the authorisation: the federal trust statement issuer.
 Some credential types are governed outside government, by associations,
 self-regulatory organisations (SROs) or industry schemes that decide which
-organisations may issue them. These bodies cannot take that decision within
-swiyu. We ask swiyu to give non-governmental sector bodies a defined role in
+organisations may issue them. Within swiyu, these bodies have no technical
+means to ensure that only the organisations they designate can issue these
+credential types. We ask swiyu to give non-governmental sector bodies a defined role in
 the trust framework, so that they can grant and withdraw these authorisations
 themselves. Who sets the scope of that role is a question for the
 consultation.
@@ -82,8 +83,8 @@ Whether these bodies would take such a role is open.
 Under the current specifications there are two options. Either
 the federal trust statement issuer declares the credential type protected and
 authorises each institution itself, or the type stays unprotected and any
-issuer can issue a credential of that type. The sector has no way to decide
-within swiyu which institutions may issue it.
+issuer can issue a credential of that type. The sector has no technical means
+within swiyu to ensure that only the institutions it designates issue it.
 
 ## Who is affected
 
