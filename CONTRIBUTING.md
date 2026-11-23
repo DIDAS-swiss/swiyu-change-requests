@@ -6,7 +6,8 @@ title: Contributing
 
 Status: proposal. The process, the governance, the aspects and the templates
 in this repository are a DIDAS proposal for discussion with the stewards,
-working groups and councils and with the swiyu ecosystem governance.
+working groups and councils. It is also put forward for discussion in the
+swiyu ecosystem governance.
 
 This guide describes how a change request is written and reviewed. Roles,
 decisions and escalation are set out in [GOVERNANCE.md](GOVERNANCE.md).
@@ -15,8 +16,8 @@ decisions and escalation are set out in [GOVERNANCE.md](GOVERNANCE.md).
 
 A change request names an obstacle that keeps actors from using swiyu, shows
 who runs into it and states what should become possible. It is the input to a
-pipeline: DIDAS consults and endorses it, submits it to the swiyu team and the
-swiyu team decides how to respond. A change request stays at a high level and
+pipeline: DIDAS consults, endorses and submits it to the swiyu team, which
+decides how to respond. A change request stays at a high level and
 typically does not propose code, data formats or API changes. Each one is
 assigned to the [aspects](ASPECTS.md) it concerns.
 
@@ -39,8 +40,8 @@ maintainer adds the `aspect:` and `sector:` labels and the label
 ### 2. Draft
 
 Once a steward is assigned, copy `proposals/0000-template.md` to
-`proposals/CR-DIDAS-NNNN-short-title.md` with the next free number, fill it in,
-add a row to `proposals/README.md` and a file in `changelog/` and open a pull
+`proposals/CR-DIDAS-NNNN-short-title.md` with the next free number and fill it
+in. Add a row to `proposals/README.md` and a file in `changelog/`. Open a pull
 request that references the issue.
 
 When the steward confirms that the change request follows the template and that
