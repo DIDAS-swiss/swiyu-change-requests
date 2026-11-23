@@ -3,6 +3,7 @@
 One file per change, named `YYYY-MM-DD-short-title.md`, added in the same pull
 request as the change. Newest first:
 
+- [2026-11-22: Automatic checks](2026-11-22-checks.md)
 - [2026-11-22: CR-DIDAS-0001 focused on non-governmental bodies](2026-11-22-cr-didas-0001-non-governmental.md)
 - [2026-11-22: Label sync](2026-11-22-sync-labels.md)
 - [2026-11-22: Merge is publication](2026-11-22-merge-is-publication.md)
